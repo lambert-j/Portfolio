@@ -1,0 +1,263 @@
+/* Colors */
+/* gris foncé : #4a473e */
+/* gris clair : #afaa96 */
+/* body color : #b0ab964d */
+
+@font-face {
+  font-family: Automata;
+  src: url(ITC\ Benguiat\ Book.ttf);
+}
+
+body {
+  background-image: url(nier-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsla(48, 14%, 64%, 0.603);
+  font-family: "Automata";
+  letter-spacing: 2px;
+}
+
+#grain {
+  background-image: url(graingif.gif);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.grid-back {
+  background-image: url(svggrid.svg);
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* .loading-screen {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #4a473e45;
+  animation: loading-fade 6s ease-in;
+  animation-fill-mode: forwards;
+} */
+
+/* @keyframes loading-fade {
+  from {
+    background-color: #4a473e;
+  }
+  to {
+    background-color: #4a473e00;
+  }
+} */
+
+.nav-deco {
+  display: flex;
+  gap: 4px;
+  /* height: 2.5rem;
+  width: 10px;
+  /* padding: 8px 0px; */
+  /* background-color: #afaa96; */
+}
+
+.nav-deco-1 {
+  height: 2.5rem;
+  width: 10px;
+  background-color: #afaa96;
+}
+.nav-deco-2 {
+  height: 2.5rem;
+  width: 4px;
+  background-color: #afaa96;
+}
+.nav-items {
+  background-color: #afaa96;
+  color: #4a473e;
+}
+
+.nav-items:last-child {
+  justify-self: flex-end;
+}
+
+.nav-items:hover {
+  background-color: #4a473e;
+  color: #afaa96;
+  box-shadow: 2px 2px 5px #4a473e;
+  cursor: pointer;
+}
+
+.dot-deco {
+  width: 100%;
+  height: 16px;
+  background-image: url(nier-border.svg);
+}
+
+.projet-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.projet-menu-items {
+  height: 40px;
+  width: 100%;
+  background-color: #afaa96;
+}
+
+.projet-menu-items:hover {
+  box-shadow: 1px 1px 3px #4a473e;
+}
+
+.projet-menu-items:hover,
+.projet-menu-items:hover .projet-menu-text,
+.projet-menu-principal:hover .projet-menu-deco {
+  color: #afaa96;
+  background-color: #4a473e;
+}
+
+.projet-menu-flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.projet-menu-barre {
+  height: 100%;
+  width: 10px;
+  background-color: #4a473e;
+}
+
+.projet-menu-text {
+  background-color: #afaa96;
+  margin-left: 10px;
+}
+
+.projet-menu-deco {
+  width: 100%;
+  height: 2px;
+  background-color: #afaa9600;
+}
+
+.projet-menu-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3px;
+}
+
+section {
+  height: 60vh;
+  margin-bottom: 15vh;
+}
+
+section div {
+  /* background-color: #6633990a; */
+}
+
+.menu-deco {
+  display: flex;
+  gap: 4px;
+}
+
+.menu-deco-1 {
+  width: 10px;
+  /* padding: 8px 0px; */
+  background-color: #afaa96;
+}
+
+.menu-deco-2 {
+  width: 4px;
+  background-color: #afaa96;
+}
+
+#reboot-box {
+  position: absolute;
+  width: 450px;
+  height: 340px;
+  transform: translate(calc((100vw - 450px) / 2), calc((100vh - 340px) / 2));
+  z-index: 9;
+  /* display: none; */
+  /* transform: translateY((50vh - 165px)); */
+}
+
+.display-none {
+  display: none;
+}
+
+/* Reboot Box */
+
+#reboot-title-box {
+  background-color: #4b483f;
+  height: 25%;
+}
+
+#reboot-title-text {
+  text-align: center;
+  transform: translateY(calc((100% + 32px) / 2));
+  color: #afaa96;
+}
+
+#reboot-text-box {
+  background-color: #b0ab96;
+  display: flex;
+  height: 75%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#reboot-text-mini-box {
+  display: flex;
+  justify-content: space-around;
+}
+#reboot-message {
+  color: #4a473e;
+  text-align: center;
+}
+.reboot-text-1 {
+  height: 1.5rem;
+  width: 40%;
+  text-align-last: center;
+  background-color: #afaa96;
+  color: #4a473e;
+  cursor: pointer;
+  border: 1px solid hsla(45, 9%, 27%, 0.5);
+}
+
+.reboot-text-1:hover {
+  background-color: #4a473e;
+  color: #afaa96;
+}
+.reboot-text-2 {
+  width: 40%;
+  background-color: #afaa96;
+  color: #4a473e;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid hsla(45, 9%, 27%, 0.5);
+}
+
+.reboot-text-2:hover {
+  background-color: #4a473e;
+  color: #afaa96;
+}
+
+/* Animations */
+
+/* Responsive */
+
+@media (max-width: 576px) {
+  .projet-menu {
+    display: none;
+  }
+  .sous-menu {
+    display: none;
+  }
+}

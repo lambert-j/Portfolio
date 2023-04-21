@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- écran de chargement -->
+    <div class="grid-back"></div>
+    <!-- backgrounds -->
+    <div id="grain"></div>
+
+    <!-- reboot box -->
+    <div id="reboot-box" class="display-none">
+      <div id="reboot-title-box">
+        <div id="reboot-title-text">Reboot</div>
+      </div>
+      <div id="reboot-text-box">
+        <div id="reboot-message">Souhaitez-vous redémarrer le terminal ?</div>
+        <div id="reboot-text-mini-box">
+          <div class="reboot-text-1">Oui</div>
+          <div onclick="displayNoneAddRebootBox()" class="reboot-text-2">
+            Annuler
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- barre de navigation -->
+    <div class="container pt-5">
+      <nav class="navbar row justify-content-between pb-3">
+        <div class="nav-deco col-auto p-2">
+          <div class="nav-deco-1"></div>
+          <div class="nav-deco-2"></div>
+        </div>
+
+        <div class="nav-items col-auto py-2 px-4">Profil</div>
+        <div class="nav-items col-auto py-2 px-4">Projets</div>
+        <div class="nav-items col-auto py-2 px-4">Contact</div>
+        <div
+          onclick="displayNoneRemove()"
+          id="reboot"
+          class="nav-items col-auto py-2 px-4"
+        >
+          Reboot
+        </div>
+      </nav>
+    </div>
+    <!-- décoration dot -->
+    <div class="dot-deco"></div>
+    <div class="container">
+      <section class="row mt-5 justify-content-between">
+        <!-- menu déco ligne -->
+        <div class="menu-deco col-auto p-2">
+          <div class="menu-deco-1"></div>
+          <div class="menu-deco-2"></div>
+        </div>
+        <!-- menu principal projets -->
+        <div class="col-4 projet-menu">
+          <div class="projet-menu-principal">
+            <div class="projet-menu-deco"></div>
+            <div class="projet-menu-flex projet-menu-items">
+              <div class="projet-menu-barre"></div>
+              <div class="projet-menu-text">Projet 1</div>
+            </div>
+            <div class="projet-menu-deco"></div>
+          </div>
+          <div class="projet-menu-principal">
+            <div class="projet-menu-deco"></div>
+            <div class="projet-menu-flex projet-menu-items">
+              <div class="projet-menu-barre"></div>
+              <div class="projet-menu-text">Projet 2</div>
+            </div>
+            <div class="projet-menu-deco"></div>
+          </div>
+          <div class="projet-menu-principal">
+            <div class="projet-menu-deco"></div>
+            <div class="projet-menu-flex projet-menu-items">
+              <div class="projet-menu-barre"></div>
+              <div class="projet-menu-text">Projet 3</div>
+            </div>
+            <div class="projet-menu-deco"></div>
+          </div>
+          <div class="projet-menu-principal">
+            <div class="projet-menu-deco"></div>
+            <div class="projet-menu-flex projet-menu-items">
+              <div class="projet-menu-barre"></div>
+              <div class="projet-menu-text">Projet 4</div>
+            </div>
+            <div class="projet-menu-deco"></div>
+          </div>
+        </div>
+        <!-- fenêtre 1 / sous menu ? -->
+        <div class="col-7 sous-menu"></div>
+      </section>
+    </div>
+    <!-- décoration dot -->
+    <div class="dot-deco"></div>
+
+    <script src="script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
