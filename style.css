@@ -80,6 +80,7 @@ body {
   justify-content: space-between;
   gap: 80px;
   width: 50%;
+  margin-right: 30px;
 }
 
 .navbar-items-box {
@@ -97,7 +98,10 @@ body {
 }
 
 .navbar-items-text:hover {
-  padding: 16px 40px;
+  padding: 12px 40px;
+  animation-name: nav-bar-anim-text;
+  animation-duration: 0.05s;
+  animation-iteration-count: 1;
 }
 
 .navbar-items-deco {
@@ -107,7 +111,16 @@ body {
 }
 .navbar-items-text {
   background-color: #afaa96;
-  padding: 16px 24px;
+  padding: 12px 24px;
+}
+
+@keyframes nav-bar-anim-text {
+  0% {
+    padding: 12px 24px;
+  }
+  100% {
+    padding: 12px 40px;
+  }
 }
 
 /* NAV BAR */
