@@ -26,8 +26,9 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="grid-back"></div>
+    <div class="loading-screen"></div>
     <!-- backgrounds -->
+    <div class="grid-back"></div>
     <div id="grain"></div>
 
     <!-- reboot box -->
@@ -54,7 +55,11 @@
           <div class="nav-deco-2"></div>
         </div>
 
-        <div class="nav-items col-auto py-2 px-4">Profil</div>
+        <div class="nav-items col-auto py-2 px-4">
+          <div class="nav-items-deco"></div>
+          <div class="">Profil</div>
+          <div class="nav-items-deco"></div>
+        </div>
         <div class="nav-items col-auto py-2 px-4">Projets</div>
         <div class="nav-items col-auto py-2 px-4">Contact</div>
         <div
@@ -117,6 +122,40 @@
     <!-- décoration dot -->
     <div class="dot-deco"></div>
 
+    <div class="navbar-items-main">
+      <div class="navbar-items-mini-main">
+        <div class="navbar-items-box">
+          <div class="navbar-items-deco"></div>
+          <div>
+            <div class="navbar-items-text">Profil</div>
+          </div>
+          <div class="navbar-items-deco"></div>
+        </div>
+
+        <div class="navbar-items-box">
+          <div class="navbar-items-deco"></div>
+          <div>
+            <div class="navbar-items-text">Projets</div>
+          </div>
+          <div class="navbar-items-deco"></div>
+        </div>
+
+        <div class="navbar-items-box">
+          <div class="navbar-items-deco"></div>
+          <div>
+            <div class="navbar-items-text">Contacts</div>
+          </div>
+          <div class="navbar-items-deco"></div>
+        </div>
+      </div>
+      <div class="navbar-items-box navbar-reboot">
+        <div class="navbar-items-deco"></div>
+        <div>
+          <div class="navbar-items-text">Reboot</div>
+        </div>
+        <div class="navbar-items-deco"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

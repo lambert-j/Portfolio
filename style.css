@@ -55,7 +55,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #4a473e45;
+  background-color: #4a473e65;
   animation: loading-fade 6s ease-in;
   animation-fill-mode: forwards;
 } */
@@ -68,6 +68,47 @@ body {
     background-color: #4a473e00;
   }
 } */
+
+/* nav bar test */
+.navbar-items-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-items-mini-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  width: 50%;
+}
+
+.navbar-items-box {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-items-box:hover,
+.navbar-items-box:hover .navbar-items-text {
+  background-color: #4a473e;
+  color: #afaa96;
+  box-shadow: 2px 2px 5px #4a473e;
+  cursor: pointer;
+  gap: 0px;
+}
+
+.navbar-items-text:hover {
+  padding: 16px 40px;
+}
+
+.navbar-items-deco {
+  width: 5px;
+  background-color: #4a473e;
+  height: 100%;
+}
+.navbar-items-text {
+  background-color: #afaa96;
+  padding: 16px 24px;
+}
 
 /* NAV BAR */
 
@@ -93,6 +134,7 @@ body {
 .nav-items {
   background-color: #afaa96;
   color: #4a473e;
+  display: flex;
 }
 
 .nav-items:last-child {
@@ -106,9 +148,15 @@ body {
   cursor: pointer;
 }
 
+.nav-items-deco {
+  height: 50px;
+  width: 4px;
+  background-color: #4a473e;
+}
+
 .dot-deco {
   width: 100%;
-  height: 16px;
+  height: 15.7px;
   background-image: url(nier-border.svg);
 }
 
