@@ -48,14 +48,56 @@
     </div>
 
     <!-- barre de navigation -->
+
     <div class="container pt-5">
-      <nav class="navbar row justify-content-between pb-3">
+      <nav class="navbar row pb-3">
         <div class="nav-deco col-auto p-2">
           <div class="nav-deco-1"></div>
           <div class="nav-deco-2"></div>
         </div>
 
-        <div class="nav-items col-auto py-2 px-4">
+        <div class="navbar-items-main col-11">
+          <div class="navbar-items-mini-main">
+            <div class="navbar-items-box">
+              <div class="navbar-items-deco"></div>
+              <div>
+                <div class="navbar-items-text">Profil</div>
+              </div>
+              <div class="navbar-items-deco"></div>
+            </div>
+
+            <div class="navbar-items-box">
+              <div class="navbar-items-deco"></div>
+              <div>
+                <div class="navbar-items-text">Projets</div>
+              </div>
+              <div class="navbar-items-deco"></div>
+            </div>
+
+            <div class="navbar-items-box">
+              <div class="navbar-items-deco"></div>
+              <div>
+                <div class="navbar-items-text">Contacts</div>
+              </div>
+              <div class="navbar-items-deco"></div>
+            </div>
+          </div>
+          <div class="navbar-items-box navbar-reboot">
+            <div class="navbar-items-deco"></div>
+            <div>
+              <div
+                onclick="displayNoneRemove()"
+                id="reboot"
+                class="navbar-items-text"
+              >
+                Reboot
+              </div>
+            </div>
+            <div class="navbar-items-deco"></div>
+          </div>
+        </div>
+
+        <!-- <div class="nav-items col-auto py-2 px-4">
           <div class="nav-items-deco"></div>
           <div class="">Profil</div>
           <div class="nav-items-deco"></div>
@@ -68,7 +110,7 @@
           class="nav-items col-auto py-2 px-4"
         >
           Reboot
-        </div>
+        </div> -->
       </nav>
     </div>
     <!-- décoration dot -->
@@ -122,7 +164,7 @@
     <!-- décoration dot -->
     <div class="dot-deco"></div>
 
-    <div class="navbar-items-main">
+    <!-- <div class="navbar-items-main">
       <div class="navbar-items-mini-main">
         <div class="navbar-items-box">
           <div class="navbar-items-deco"></div>
@@ -155,7 +197,7 @@
         </div>
         <div class="navbar-items-deco"></div>
       </div>
-    </div>
+    </div> -->
     <script src="script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
