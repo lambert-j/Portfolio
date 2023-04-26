@@ -5,7 +5,7 @@
 
 /* Javascript class */
 .display-none {
-  display: none;
+  display: none !important;
 }
 
 /* body - global */
@@ -252,6 +252,60 @@ body {
   }
 }
 
+/* Sous menu */
+
+.sous-menu-window1,
+.sous-menu-window2,
+.sous-menu-window3,
+.sous-menu-window4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sous-menu-box-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-box-sous-menu1,
+.image-box-sous-menu2,
+.image-box-sous-menu3,
+.image-box-sous-menu4 {
+  height: 275px;
+  width: 100%;
+}
+.image-box-sous-menu1 {
+  background-color: rgb(218, 16, 16);
+}
+.image-box-sous-menu2 {
+  background-color: rgb(218, 198, 16);
+}
+.image-box-sous-menu3 {
+  background-color: rgb(16, 218, 93);
+}
+.image-box-sous-menu4 {
+  background-color: rgb(19, 16, 218);
+}
+
+.sous-menu-text-box {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.sous-menu-link-box {
+  align-self: flex-end;
+  color: #4a473e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sous-menu-link-box:hover {
+  text-decoration: underline solid #4a473e 2px;
+}
+
 /* SECTION */
 
 section {
@@ -260,7 +314,7 @@ section {
 }
 
 section div {
-  background-color: #6633990a;
+  /* background-color: #6633990a; */
 }
 
 .menu-deco {

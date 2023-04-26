@@ -124,7 +124,7 @@
         </div>
         <!-- menu principal projets -->
         <div class="col-4 projet-menu">
-          <div onclick="sousMenu1()" class="projet-menu-principal">
+          <div onclick="DisplayToggleSousMenu1()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-flex projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -132,7 +132,7 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div class="projet-menu-principal">
+          <div onclick="DisplayToggleSousMenu2()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-flex projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -140,7 +140,7 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div class="projet-menu-principal">
+          <div onclick="DisplayToggleSousMenu3()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-flex projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -148,7 +148,7 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div class="projet-menu-principal">
+          <div onclick="DisplayToggleSousMenu4()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-flex projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -158,9 +158,55 @@
           </div>
         </div>
         <!-- fenêtre 1 / sous menu ? -->
-        <!-- utiliser javascript pour afficher une div avec le contenu de la page désiré dans la div sous-menu-window, chaque clique va afficher un contenu qui va remplacer le précédent  -->
         <div class="col-7 sous-menu">
-          <div id="sous-menu-window"></div>
+          <div class="sous-menu-window1">
+            <div class="image-box-sous-menu1"></div>
+            <div class="sous-menu-box-principal">
+              <div class="sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a class="sous-menu-link-box">Découvrir</a>
+            </div>
+          </div>
+          <div class="sous-menu-window2 display-none">
+            <div class="image-box-sous-menu2"></div>
+            <div class="sous-menu-box-principal">
+              <div class="sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a class="sous-menu-link-box">Découvrir</a>
+            </div>
+          </div>
+          <div class="sous-menu-window3 display-none">
+            <div class="image-box-sous-menu3"></div>
+            <div class="sous-menu-box-principal">
+              <div class="sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a class="sous-menu-link-box">Découvrir</a>
+            </div>
+          </div>
+          <div class="sous-menu-window4 display-none">
+            <div class="image-box-sous-menu4"></div>
+            <div class="sous-menu-box-principal">
+              <div class="sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a class="sous-menu-link-box">Découvrir</a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -10,13 +10,40 @@ function displayNoneAddRebootBox() {
   elements.classList.add("display-none");
 }
 
-function sousMenu1() {
-  document.querySelector("#sous-menu-window").innerHTML = function () {
-    let imageBox = document.createElement("img");
-    imageBox.className = "image-box-sous-menu";
-    let sousMenuText = document.createElement("div");
-    sousMenuText.className = "sous-menu-text-box";
-    let sousMenuAnchor = document.createElement("a");
-    sousMenuAnchor.className = "sous-menu-link-box";
-  };
+function DisplayToggleSousMenu1() {
+  let elementAll = document.querySelector(
+    ".sous-menu-window2",
+    ".sous-menu-window3",
+    ".sous-menu-window4"
+  );
+  elementAll.classList.add("display-none");
+  let element = document.querySelector(".sous-menu-window1");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleSousMenu2() {
+  let elementAll = document.querySelector(
+    ".sous-menu-window1, .sous-menu-window3, .sous-menu-window4"
+  );
+  elementAll.classList.add("display-none");
+  let element = document.querySelector(".sous-menu-window2");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleSousMenu3() {
+  let elementAll = document.querySelector(
+    ".sous-menu-window1, .sous-menu-window2, .sous-menu-window4"
+  );
+  elementAll.classList.add("display-none");
+  let element = document.querySelector(".sous-menu-window3");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleSousMenu4() {
+  let elementAll = document.querySelector(
+    ".sous-menu-window1, .sous-menu-window2, .sous-menu-window3"
+  );
+  elementAll.classList.add("display-none");
+  let element = document.querySelector(".sous-menu-window4");
+  element.classList.remove("display-none");
 }
