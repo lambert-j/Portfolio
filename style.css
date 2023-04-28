@@ -275,11 +275,14 @@ body {
 .image-box-sous-menu2,
 .image-box-sous-menu3,
 .image-box-sous-menu4 {
-  height: 275px;
+  height: 325px;
   width: 100%;
 }
 .image-box-sous-menu1 {
-  background-color: rgb(218, 16, 16);
+  background-image: url(OmniFood.PNG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .image-box-sous-menu2 {
   background-color: rgb(218, 198, 16);
@@ -304,6 +307,15 @@ body {
 
 .sous-menu-link-box:hover {
   text-decoration: underline solid #4a473e 2px;
+}
+
+.sous-menu-anchor1 {
+}
+.sous-menu-anchor2 {
+}
+.sous-menu-anchor3 {
+}
+.sous-menu-anchor4 {
 }
 
 /* SECTION */
