@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/sass.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -96,21 +96,6 @@
             <div class="navbar-items-deco"></div>
           </div>
         </div>
-
-        <!-- <div class="nav-items col-auto py-2 px-4">
-          <div class="nav-items-deco"></div>
-          <div class="">Profil</div>
-          <div class="nav-items-deco"></div>
-        </div>
-        <div class="nav-items col-auto py-2 px-4">Projets</div>
-        <div class="nav-items col-auto py-2 px-4">Contact</div>
-        <div
-          onclick="displayNoneRemove()"
-          id="reboot"
-          class="nav-items col-auto py-2 px-4"
-        >
-          Reboot
-        </div> -->
       </nav>
     </div>
     <!-- décoration dot -->
@@ -126,7 +111,7 @@
         <div class="col-4 projet-menu">
           <div onclick="DisplayToggleSousMenu1()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
-            <div class="projet-menu-flex projet-menu-items">
+            <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
               <div class="projet-menu-text">Projet 1</div>
             </div>
@@ -134,7 +119,7 @@
           </div>
           <div onclick="DisplayToggleSousMenu2()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
-            <div class="projet-menu-flex projet-menu-items">
+            <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
               <div class="projet-menu-text">Projet 2</div>
             </div>
@@ -142,7 +127,7 @@
           </div>
           <div onclick="DisplayToggleSousMenu3()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
-            <div class="projet-menu-flex projet-menu-items">
+            <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
               <div class="projet-menu-text">Projet 3</div>
             </div>
@@ -150,7 +135,7 @@
           </div>
           <div onclick="DisplayToggleSousMenu4()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
-            <div class="projet-menu-flex projet-menu-items">
+            <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
               <div class="projet-menu-text">Projet 4</div>
             </div>
@@ -169,7 +154,13 @@
                 eaque impedit debitis praesentium voluptatibus quod cupiditate
                 consectetur nostrum culpa nihil porro quo?
               </div>
-              <a class="sous-menu-link-box sous-menu-anchor1">Découvrir</a>
+              <a
+                href="https://omnifood-lambert.netlify.app"
+                target="_blank"
+                rel="noopener"
+                class="sous-menu-link-box sous-menu-anchor1"
+                >Découvrir</a
+              >
             </div>
           </div>
           <!-- Sous Menu 2 -->
