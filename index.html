@@ -61,7 +61,9 @@
             <div class="navbar-items-box">
               <div class="navbar-items-deco"></div>
               <div>
-                <div class="navbar-items-text">Profil</div>
+                <div onclick="DisplayProfilMenu()" class="navbar-items-text">
+                  Profil
+                </div>
               </div>
               <div class="navbar-items-deco"></div>
             </div>
@@ -69,7 +71,9 @@
             <div class="navbar-items-box">
               <div class="navbar-items-deco"></div>
               <div>
-                <div class="navbar-items-text">Projets</div>
+                <div onclick="DisplayProjetMenu()" class="navbar-items-text">
+                  Projets
+                </div>
               </div>
               <div class="navbar-items-deco"></div>
             </div>
@@ -77,7 +81,9 @@
             <div class="navbar-items-box">
               <div class="navbar-items-deco"></div>
               <div>
-                <div class="navbar-items-text">Contacts</div>
+                <div onclick="DisplayContactMenu()" class="navbar-items-text">
+                  Contacts
+                </div>
               </div>
               <div class="navbar-items-deco"></div>
             </div>
@@ -107,8 +113,14 @@
           <div class="menu-deco-1"></div>
           <div class="menu-deco-2"></div>
         </div>
+
+        <!-- Menu Profil -->
+        <div class="col-4 profil-display display-none global-display">1</div>
+        <div class="col-7 profil-display display-none global-display">2</div>
         <!-- menu principal projets -->
-        <div class="col-4 projet-menu">
+        <div
+          class="col-4 projet-menu display-none projet-menu-display global-display"
+        >
           <div onclick="DisplayToggleSousMenu1()" class="projet-menu-principal">
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
@@ -144,7 +156,9 @@
         </div>
         <!-- fenêtre 1 / sous menu ? -->
         <!-- Sous Menu 1 -->
-        <div class="col-7 sous-menu">
+        <div
+          class="col-7 sous-menu display-none projet-menu-display global-display"
+        >
           <div class="sous-menu-window1 sous-menu-windows-all">
             <div class="image-box-sous-menu1"></div>
             <div class="sous-menu-box-principal">
@@ -207,6 +221,9 @@
             </div>
           </div>
         </div>
+        <!-- Menu Contact -->
+        <div class="col-4 contact-display display-none global-display">3</div>
+        <div class="col-7 contact-display display-none global-display">4</div>
       </section>
     </div>
     <!-- décoration dot -->
