@@ -1,5 +1,5 @@
 // Reboot box display on click
-function displayNoneRemove() {
+function DisplayNoneRemove() {
   let elements = document.querySelector("#reboot-box");
   elements.classList.remove("display-none");
 }

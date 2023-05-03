@@ -58,48 +58,44 @@
 
         <div class="navbar-items-main col-11">
           <div class="navbar-items-mini-main">
-            <div class="navbar-items-box">
-              <div class="navbar-items-deco"></div>
-              <div>
-                <div onclick="DisplayProfilMenu()" class="navbar-items-text">
-                  Profil
-                </div>
+            <div onclick="DisplayProfilMenu()" class="nav-menu-principal">
+              <div class="nav-menu-deco"></div>
+              <div class="nav-menu-items">
+                <div class="nav-menu-barre"></div>
+                <div class="nav-menu-text">Profil</div>
               </div>
-              <div class="navbar-items-deco"></div>
+              <div class="nav-menu-deco"></div>
+            </div>
+            <div onclick="DisplayProjetMenu()" class="nav-menu-principal">
+              <div class="nav-menu-deco"></div>
+              <div class="nav-menu-items">
+                <div class="nav-menu-barre"></div>
+                <div class="nav-menu-text">Projets</div>
+              </div>
+              <div class="nav-menu-deco"></div>
             </div>
 
-            <div class="navbar-items-box">
-              <div class="navbar-items-deco"></div>
-              <div>
-                <div onclick="DisplayProjetMenu()" class="navbar-items-text">
-                  Projets
-                </div>
+            <div onclick="DisplayContactMenu()" class="nav-menu-principal">
+              <div class="nav-menu-deco"></div>
+              <div class="nav-menu-items">
+                <div class="nav-menu-barre"></div>
+                <div class="nav-menu-text">Contacts</div>
               </div>
-              <div class="navbar-items-deco"></div>
-            </div>
-
-            <div class="navbar-items-box">
-              <div class="navbar-items-deco"></div>
-              <div>
-                <div onclick="DisplayContactMenu()" class="navbar-items-text">
-                  Contacts
-                </div>
-              </div>
-              <div class="navbar-items-deco"></div>
+              <div class="nav-menu-deco"></div>
             </div>
           </div>
-          <div class="navbar-items-box navbar-reboot">
-            <div class="navbar-items-deco"></div>
-            <div>
-              <div
-                onclick="displayNoneRemove()"
-                id="reboot"
-                class="navbar-items-text"
-              >
-                Reboot
-              </div>
+
+          <div
+            onclick="DisplayNoneRemove()"
+            class="nav-menu-principal navbar-reboot"
+            id="reboot"
+          >
+            <div class="nav-menu-deco"></div>
+            <div class="nav-menu-items">
+              <div class="nav-menu-barre"></div>
+              <div class="nav-menu-text">Reboot</div>
             </div>
-            <div class="navbar-items-deco"></div>
+            <div class="nav-menu-deco"></div>
           </div>
         </div>
       </nav>
@@ -137,7 +133,10 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div onclick="DisplayToggleSousMenu3()" class="projet-menu-principal">
+          <div
+            onclick="DisplayToggleSousMenu3()"
+            class="projet-menu-principal active"
+          >
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
