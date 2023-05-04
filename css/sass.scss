@@ -7,6 +7,54 @@ $dark-gray: #4a473e;
   display: none !important;
 }
 
+.active {
+  background-color: none;
+  cursor: pointer;
+  color: $light-gray;
+  .projet-menu-deco,
+  .projet-menu-items,
+  .projet-menu-barre,
+  .projet-menu-text {
+    background-color: $dark-gray !important;
+    color: $light-gray !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    .projet-menu-deco,
+    .projet-menu-items,
+    .projet-menu-barre,
+    .projet-menu-text {
+      background-color: $dark-gray !important;
+      color: $light-gray !important;
+      animation: none !important;
+    }
+  }
+}
+
+.active-nav {
+  background-color: none;
+  cursor: pointer;
+  color: $light-gray;
+  .nav-menu-deco,
+  .nav-menu-items,
+  .nav-menu-barre,
+  .nav-menu-text {
+    background-color: $dark-gray !important;
+    color: $light-gray !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    .nav-menu-deco,
+    .nav-menu-items,
+    .nav-menu-barre,
+    .nav-menu-text {
+      background-color: $dark-gray !important;
+      color: $light-gray !important;
+      animation: none !important;
+    }
+  }
+}
+
 /* body - global */
 
 @font-face {
@@ -194,29 +242,6 @@ body {
     cursor: pointer;
     color: $light-gray;
   }
-  .active {
-    background-color: $dark-gray;
-    cursor: pointer;
-    color: $light-gray;
-    .projet-menu-deco,
-    .projet-menu-items,
-    .projet-menu-barre,
-    .projet-menu-text {
-      background-color: $dark-gray !important;
-      color: $light-gray !important;
-      box-shadow: none !important;
-    }
-    &:hover {
-      .projet-menu-deco,
-      .projet-menu-items,
-      .projet-menu-barre,
-      .projet-menu-text {
-        background-color: $dark-gray !important;
-        color: $light-gray !important;
-        animation: none !important;
-      }
-    }
-  }
 
   /////////////////////////////////
   /* SECTION */
@@ -332,7 +357,7 @@ body {
     .image-box-sous-menu2,
     .image-box-sous-menu3,
     .image-box-sous-menu4 {
-      height: 325px;
+      height: 300px;
       width: 100%;
     }
     .image-box-sous-menu1 {

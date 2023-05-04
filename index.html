@@ -58,7 +58,11 @@
 
         <div class="navbar-items-main col-11">
           <div class="navbar-items-mini-main">
-            <div onclick="DisplayProfilMenu()" class="nav-menu-principal">
+            <div
+              onclick="DisplayProfilMenu(), activeNav(this.id)"
+              class="nav-menu-principal"
+              id="nav-1"
+            >
               <div class="nav-menu-deco"></div>
               <div class="nav-menu-items">
                 <div class="nav-menu-barre"></div>
@@ -66,7 +70,11 @@
               </div>
               <div class="nav-menu-deco"></div>
             </div>
-            <div onclick="DisplayProjetMenu()" class="nav-menu-principal">
+            <div
+              onclick="DisplayProjetMenu(), activeNav(this.id)"
+              class="nav-menu-principal"
+              id="nav-2"
+            >
               <div class="nav-menu-deco"></div>
               <div class="nav-menu-items">
                 <div class="nav-menu-barre"></div>
@@ -75,7 +83,11 @@
               <div class="nav-menu-deco"></div>
             </div>
 
-            <div onclick="DisplayContactMenu()" class="nav-menu-principal">
+            <div
+              onclick="DisplayContactMenu(), activeNav(this.id)"
+              class="nav-menu-principal"
+              id="nav-3"
+            >
               <div class="nav-menu-deco"></div>
               <div class="nav-menu-items">
                 <div class="nav-menu-barre"></div>
@@ -86,7 +98,7 @@
           </div>
 
           <div
-            onclick="DisplayNoneRemove()"
+            onclick="DisplayNoneRemove(), activeNav(this.id)"
             class="nav-menu-principal navbar-reboot"
             id="reboot"
           >
@@ -117,7 +129,11 @@
         <div
           class="col-4 projet-menu display-none projet-menu-display global-display"
         >
-          <div onclick="DisplayToggleSousMenu1()" class="projet-menu-principal">
+          <div
+            onclick="DisplayToggleSousMenu1(this.id), activeProjet(this.id)"
+            class="projet-menu-principal"
+            id="menu-1"
+          >
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -125,7 +141,11 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div onclick="DisplayToggleSousMenu2()" class="projet-menu-principal">
+          <div
+            onclick="DisplayToggleSousMenu2(), activeProjet(this.id)"
+            class="projet-menu-principal"
+            id="menu-2"
+          >
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -134,8 +154,9 @@
             <div class="projet-menu-deco"></div>
           </div>
           <div
-            onclick="DisplayToggleSousMenu3()"
-            class="projet-menu-principal active"
+            onclick="DisplayToggleSousMenu3(), activeProjet(this.id)"
+            class="projet-menu-principal"
+            id="menu-3"
           >
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
@@ -144,7 +165,11 @@
             </div>
             <div class="projet-menu-deco"></div>
           </div>
-          <div onclick="DisplayToggleSousMenu4()" class="projet-menu-principal">
+          <div
+            onclick="DisplayToggleSousMenu4(), activeProjet(this.id)"
+            class="projet-menu-principal"
+            id="menu-4"
+          >
             <div class="projet-menu-deco"></div>
             <div class="projet-menu-items">
               <div class="projet-menu-barre"></div>
@@ -158,7 +183,7 @@
         <div
           class="col-7 sous-menu display-none projet-menu-display global-display"
         >
-          <div class="sous-menu-window1 sous-menu-windows-all">
+          <div class="sous-menu-window1 sous-menu-windows-all display-none">
             <div class="image-box-sous-menu1"></div>
             <div class="sous-menu-box-principal">
               <div class="sous-menu-text-box">

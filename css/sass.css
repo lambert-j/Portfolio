@@ -3,6 +3,50 @@
   display: none !important;
 }
 
+.active {
+  background-color: none;
+  cursor: pointer;
+  color: #afaa96;
+}
+.active .projet-menu-deco,
+.active .projet-menu-items,
+.active .projet-menu-barre,
+.active .projet-menu-text {
+  background-color: #4a473e !important;
+  color: #afaa96 !important;
+  box-shadow: none !important;
+}
+.active:hover .projet-menu-deco,
+.active:hover .projet-menu-items,
+.active:hover .projet-menu-barre,
+.active:hover .projet-menu-text {
+  background-color: #4a473e !important;
+  color: #afaa96 !important;
+  animation: none !important;
+}
+
+.active-nav {
+  background-color: none;
+  cursor: pointer;
+  color: #afaa96;
+}
+.active-nav .nav-menu-deco,
+.active-nav .nav-menu-items,
+.active-nav .nav-menu-barre,
+.active-nav .nav-menu-text {
+  background-color: #4a473e !important;
+  color: #afaa96 !important;
+  box-shadow: none !important;
+}
+.active-nav:hover .nav-menu-deco,
+.active-nav:hover .nav-menu-items,
+.active-nav:hover .nav-menu-barre,
+.active-nav:hover .nav-menu-text {
+  background-color: #4a473e !important;
+  color: #afaa96 !important;
+  animation: none !important;
+}
+
 /* body - global */
 @font-face {
   font-family: Automata;
@@ -153,27 +197,6 @@ body .nav-menu-principal:hover .nav-menu-text {
   cursor: pointer;
   color: #afaa96;
 }
-body .active {
-  background-color: #4a473e;
-  cursor: pointer;
-  color: #afaa96;
-}
-body .active .projet-menu-deco,
-body .active .projet-menu-items,
-body .active .projet-menu-barre,
-body .active .projet-menu-text {
-  background-color: #4a473e !important;
-  color: #afaa96 !important;
-  box-shadow: none !important;
-}
-body .active:hover .projet-menu-deco,
-body .active:hover .projet-menu-items,
-body .active:hover .projet-menu-barre,
-body .active:hover .projet-menu-text {
-  background-color: #4a473e !important;
-  color: #afaa96 !important;
-  animation: none !important;
-}
 body section {
   height: 60vh;
   margin-bottom: 10vh;
@@ -269,7 +292,7 @@ body section .image-box-sous-menu1,
 body section .image-box-sous-menu2,
 body section .image-box-sous-menu3,
 body section .image-box-sous-menu4 {
-  height: 325px;
+  height: 300px;
   width: 100%;
 }
 body section .image-box-sous-menu1 {
