@@ -12,6 +12,17 @@ function displayNoneAddRebootBox() {
   removeNavActive();
 }
 
+// Fonction reboot Oui Loading Screen Anim
+function rebootBoxYes() {
+  let elements = document.querySelector("#reboot-box");
+  elements.classList.add("display-none");
+  removeNavActive();
+  document.querySelector(".loading-screen").classList.remove("display-none");
+  setTimeout(() => {
+    document.querySelector(".loading-screen").classList.add("display-none");
+  }, 3000);
+}
+
 // fonction ADD DISPLAY NONE to Global
 function displayNoneGlobal() {
   let elementGlobalAll = document.querySelectorAll(".global-display");

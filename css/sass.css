@@ -89,6 +89,24 @@ body .grid-back {
   opacity: 0.4;
   pointer-events: none;
 }
+body .loading-screen {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(74, 71, 62, 0.3960784314);
+  animation: loading-fade 3s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes loading-fade {
+  from {
+    background-color: #4a473e;
+  }
+  to {
+    background-color: #4a473e;
+    pointer-events: none;
+  }
+}
 body .navbar-items-main {
   display: flex;
   justify-content: space-between;

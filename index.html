@@ -26,7 +26,7 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="loading-screen"></div>
+    <div class="loading-screen display-none"></div>
     <!-- backgrounds -->
     <div class="grid-back"></div>
     <div id="grain"></div>
@@ -39,7 +39,7 @@
       <div id="reboot-text-box">
         <div id="reboot-message">Souhaitez-vous redémarrer le terminal ?</div>
         <div id="reboot-text-mini-box">
-          <div class="reboot-text-1">Oui</div>
+          <div onclick="rebootBoxYes()" class="reboot-text-1">Oui</div>
           <div onclick="displayNoneAddRebootBox()" class="reboot-text-2">
             Annuler
           </div>
@@ -48,7 +48,6 @@
     </div>
 
     <!-- barre de navigation -->
-
     <div class="container pt-5">
       <nav class="navbar row pb-3">
         <div class="nav-deco col-auto p-2">
