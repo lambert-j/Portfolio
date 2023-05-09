@@ -130,3 +130,73 @@ function activeNav(clicked_id) {
   let target = document.querySelector("#" + clicked_id);
   target.classList.add("active-nav");
 }
+
+// Fonction Loading Screen Add
+
+const animLoadingAdd = function animLoad() {
+  let elements = document.querySelectorAll(".load-all");
+  setTimeout(() => {
+    document.querySelector(".load-1").classList.remove("display-none");
+  }, 50);
+  setTimeout(() => {
+    document.querySelector(".load-2").classList.remove("display-none");
+  }, 100);
+  setTimeout(() => {
+    document.querySelector(".load-3").classList.remove("display-none");
+  }, 150);
+  setTimeout(() => {
+    document.querySelector(".load-4").classList.remove("display-none");
+  }, 200);
+  setTimeout(() => {
+    document.querySelector(".load-5").classList.remove("display-none");
+  }, 250);
+  setTimeout(() => {
+    document.querySelector(".load-6").classList.remove("display-none");
+  }, 300);
+  setTimeout(() => {
+    document.querySelector(".load-6").classList.remove("display-none");
+  }, 350);
+
+  setTimeout(() => {
+    document.querySelector(".loadbox").classList.add("backimg");
+    elements.forEach((element) => {
+      element.classList.add("display-none");
+    });
+  }, 400);
+};
+
+// Fonction Loading Screen Remove
+const animLoadingRemove = function animLoadR() {
+  setTimeout(() => {
+    let elements = document.querySelectorAll(".load-all");
+    setTimeout(() => {
+      document.querySelector(".loadbox").classList.remove("backimg");
+      elements.forEach((element) => {
+        element.classList.remove("display-none");
+      });
+    }, 50);
+    setTimeout(() => {
+      document.querySelector(".load-7").classList.add("display-none");
+    }, 100);
+    setTimeout(() => {
+      document.querySelector(".load-6").classList.add("display-none");
+    }, 150);
+    setTimeout(() => {
+      document.querySelector(".load-5").classList.add("display-none");
+    }, 200);
+    setTimeout(() => {
+      document.querySelector(".load-4").classList.add("display-none");
+    }, 250);
+    setTimeout(() => {
+      document.querySelector(".load-3").classList.add("display-none");
+    }, 300);
+    setTimeout(() => {
+      document.querySelector(".load-2").classList.add("display-none");
+    }, 350);
+    setTimeout(() => {
+      document.querySelector(".load-1").classList.add("display-none");
+    }, 400);
+  }, 1000);
+};
+// animLoadingAdd();
+// animLoadingRemove();

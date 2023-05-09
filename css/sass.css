@@ -89,23 +89,41 @@ body .grid-back {
   opacity: 0.4;
   pointer-events: none;
 }
-body .loading-screen {
-  z-index: 999;
-  width: 100%;
-  height: 100%;
+body .loadbox {
+  height: 100vh;
+  width: 100vw;
   position: absolute;
-  background-color: rgba(74, 71, 62, 0.3960784314);
-  animation: loading-fade 3s ease-in;
-  animation-fill-mode: forwards;
+  z-index: 997;
+  pointer-events: none;
 }
-@keyframes loading-fade {
-  from {
-    background-color: #4a473e;
-  }
-  to {
-    background-color: #4a473e;
-    pointer-events: none;
-  }
+body .backimg {
+  background-color: rgb(0, 0, 0);
+}
+body .loadbox div {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+body .load-1 {
+  background: url(../images/bg_block01_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-2 {
+  background: url(../images/bg_block02_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-3 {
+  background: url(../images/bg_block03_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-4 {
+  background: url(../images/bg_block04_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-5 {
+  background: url(../images/bg_block05_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-6 {
+  background: url(../images/bg_block06_bk.png) left top/min(150%, 2000px) repeat;
+}
+body .load-7 {
+  background: url(../images/bg_block07_bk.png) left top/min(150%, 2000px) repeat;
 }
 body .navbar-items-main {
   display: flex;
