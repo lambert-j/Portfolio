@@ -68,11 +68,10 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   background-color: $body-color;
   font-family: "Quantico";
-  /* font-family: "automata";
-  font-family: "Press Start 2P"; */
   letter-spacing: 3px;
   font-size: 1.4rem;
 
@@ -554,6 +553,7 @@ body {
       color: $dark-gray;
       text-decoration: none;
       cursor: pointer;
+      font-size: 1.6rem;
     }
 
     .sous-menu-link-box:hover {

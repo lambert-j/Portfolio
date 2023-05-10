@@ -58,11 +58,10 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   background-color: rgba(176, 171, 150, 0.6039215686);
   font-family: "Quantico";
-  /* font-family: "automata";
-  font-family: "Press Start 2P"; */
   letter-spacing: 3px;
   font-size: 1.4rem;
   /* nav bar test */
@@ -466,6 +465,7 @@ body section .sous-menu-link-box {
   color: #4a473e;
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 body section .sous-menu-link-box:hover {
   -webkit-text-decoration: underline solid #4a473e 2px;
