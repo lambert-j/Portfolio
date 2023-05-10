@@ -125,6 +125,117 @@ body .load-6 {
 body .load-7 {
   background: url(../images/bg_block07_bk.png) left top/min(150%, 2000px) repeat;
 }
+body .start-playbtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 998;
+  cursor: pointer;
+}
+body .start-playbtn:hover .playbtn-box1 {
+  animation: rotata 0.5s 1 forwards;
+}
+body .playbtn-box1-animout {
+  animation: rotata-out 0.5s 1 forwards;
+}
+body .start-playbtn:hover .playbtn-box2 {
+  animation: scale 0.5s 1 forwards;
+}
+body .playbtn-box2-animout {
+  animation: scale-out 0.5s 1 forwards;
+}
+body .playbtn-anim {
+  animation: glitchstart 0.5s 1 forwards;
+}
+body .playbtn-box1 {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid white;
+  position: absolute;
+  transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+}
+body .playbtn-box2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  position: absolute;
+  transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) rotate(45deg);
+}
+body .playbtn {
+  background-image: url(../images/iconmonstr-media-control-48.svg);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  width: 25px;
+  height: 25px;
+  transform: translate(calc((100vw - 18px) / 2), calc((100vh - 25px) / 2));
+}
+@keyframes scale {
+  0% {
+    transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(1) rotate(45deg);
+  }
+  100% {
+    transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(0.8) rotate(45deg);
+  }
+}
+@keyframes scale-out {
+  0% {
+    transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(0.8) rotate(45deg);
+  }
+  100% {
+    transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(1) rotate(45deg);
+  }
+}
+@keyframes rotata {
+  0% {
+    transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+  }
+  100% {
+    transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(90deg);
+  }
+}
+@keyframes rotata-out {
+  0% {
+    transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(90deg);
+  }
+  100% {
+    transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+  }
+}
+@keyframes glitchstart {
+  0% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  5% {
+    filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  10% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  40% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  45% {
+    filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  50% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  65% {
+    filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  70% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  90% {
+    filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  93% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+  100% {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+  }
+}
 body .navbar-items-main {
   display: flex;
   justify-content: space-between;

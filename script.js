@@ -17,10 +17,6 @@ function rebootBoxYes() {
   let elements = document.querySelector("#reboot-box");
   elements.classList.add("display-none");
   removeNavActive();
-  document.querySelector(".loading-screen").classList.remove("display-none");
-  setTimeout(() => {
-    document.querySelector(".loading-screen").classList.add("display-none");
-  }, 3000);
 }
 
 // fonction ADD DISPLAY NONE to Global
@@ -161,6 +157,7 @@ const animLoadingAdd = function animLoad() {
     document.querySelector(".loadbox").classList.add("backimg");
     elements.forEach((element) => {
       element.classList.add("display-none");
+      document.querySelector(".start-playbtn").classList.remove("display-none");
     });
   }, 400);
 };
@@ -171,6 +168,7 @@ const animLoadingRemove = function animLoadR() {
     let elements = document.querySelectorAll(".load-all");
     setTimeout(() => {
       document.querySelector(".loadbox").classList.remove("backimg");
+      document.querySelector(".start-playbtn").classList.add("display-none");
       elements.forEach((element) => {
         element.classList.remove("display-none");
       });
@@ -200,3 +198,27 @@ const animLoadingRemove = function animLoadR() {
 };
 // animLoadingAdd();
 // animLoadingRemove();
+
+// Fonction Start Button
+document
+  .querySelector(".start-playbtn")
+  .addEventListener("mouseover", buttonStartAnim);
+document
+  .querySelector(".start-playbtn")
+  .addEventListener("mouseout", buttonStartAnimOut);
+
+function buttonStartAnim() {
+  document.querySelector(".playbtn").classList.add("playbtn-anim");
+  document
+    .querySelector(".playbtn-box2")
+    .classList.remove("playbtn-box2-animout");
+  document
+    .querySelector(".playbtn-box1")
+    .classList.remove("playbtn-box1-animout");
+}
+
+function buttonStartAnimOut() {
+  document.querySelector(".playbtn").classList.remove("playbtn-anim");
+  document.querySelector(".playbtn-box2").classList.add("playbtn-box2-animout");
+  document.querySelector(".playbtn-box1").classList.add("playbtn-box1-animout");
+}
