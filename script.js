@@ -30,11 +30,14 @@ function displayNoneGlobal() {
 // Menu Profil Display
 function DisplayProfilMenu() {
   displayNoneGlobal();
+
   let elementAll = document.querySelectorAll(".profil-display");
   elementAll.forEach((element) => {
     element.classList.remove("display-none");
   });
   removeProjetActive();
+  displayRemoveProfilMenu();
+  removeProfilActive();
   displayRemoveSousMenu();
 }
 
@@ -47,12 +50,62 @@ function DisplayProjetMenu() {
     element.classList.remove("display-none");
   });
 }
-// fonction remove display sous menu windows
+// fonction remove display sous menu PROJET windows
 
 function displayRemoveSousMenu() {
   let elementAll = document.querySelectorAll(".sous-menu-windows-all");
   elementAll.forEach((element) => {
     element.classList.add("display-none");
+  });
+}
+// fonction remove display SOUS MENU PROFIL windows
+
+function displayRemoveProfilMenu() {
+  let elementAll = document.querySelectorAll(".profil-menu-windows-all");
+  elementAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+// Fonction Remove display sous menu Profil
+function displayRemoveProfilMenu() {
+  let elementAll = document.querySelectorAll(".profil-menu-windows-all");
+  elementAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+//Profil Display Menu
+function DisplayToggleProfilMenu1() {
+  displayRemoveProfilMenu();
+  let element = document.querySelector(".profil-menu-window1");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleProfilMenu2() {
+  displayRemoveProfilMenu();
+  let element = document.querySelector(".profil-menu-window2");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleProfilMenu3() {
+  displayRemoveProfilMenu();
+  let element = document.querySelector(".profil-menu-window3");
+  element.classList.remove("display-none");
+}
+
+// fonction ACTIVE PROFIL menu
+function activeProfil(clicked_id) {
+  removeProfilActive();
+  let target = document.querySelector("#" + clicked_id);
+  target.classList.add("active-profil");
+}
+
+// fonction REMOVE ACTIVE PROFIL menu
+function removeProfilActive() {
+  let elementProjetAll = document.querySelectorAll(".profil-menu-principal");
+  elementProjetAll.forEach((element) => {
+    element.classList.remove("active-profil");
   });
 }
 
@@ -194,10 +247,8 @@ const animLoadingRemove = function animLoadR() {
     setTimeout(() => {
       document.querySelector(".load-1").classList.add("display-none");
     }, 400);
-  }, 1000);
+  }, 500);
 };
-// animLoadingAdd();
-// animLoadingRemove();
 
 // Fonction Start Button
 document
