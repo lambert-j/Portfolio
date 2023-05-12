@@ -296,7 +296,7 @@ const animLoadingAdd = function animLoad() {
   }, 300);
 };
 
-// Fonction Loading Screen Remove
+// Fonction Loading Screen navbar-reboot
 const animLoadingRemove = function animLoadR() {
   setTimeout(() => {
     let elements = document.querySelectorAll(".load-all");
