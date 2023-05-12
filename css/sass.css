@@ -804,6 +804,50 @@ body #reboot-box #reboot-text-box #reboot-text-mini-box .reboot-text-2:hover {
   background-color: #4a473e;
   color: #afaa96;
 }
+body .slide-right1 {
+  animation: slide-right1 0.05s linear both;
+}
+@keyframes slide-right1 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+body .slide-right2 {
+  animation: slide-right2 0.09s linear both;
+}
+@keyframes slide-right2 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+body .slide-right3 {
+  animation: slide-right3 0.13s linear both;
+}
+@keyframes slide-right3 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+body .slide-right4 {
+  animation: slide-right4 0.17s linear both;
+}
+@keyframes slide-right4 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 @media (max-width: 576px) {
   body .projet-menu {
     display: none;

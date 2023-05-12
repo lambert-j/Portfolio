@@ -39,9 +39,13 @@ function displayNoneGlobal() {
 function DisplayProjetMenu() {
   displayNoneGlobal();
   let elementAll = document.querySelectorAll(".projet-menu-display");
+  let elementSousAll = document.querySelectorAll(".projet-menu-principal");
   elementAll.forEach((element) => {
     element.classList.remove("display-none");
   });
+  // elementSousAll.forEach((element) => {
+  //   element.classList.add("slide-right");
+  // });
   displayRemoveProfilMenu();
   removeProfilActive();
   removeContactActive();
@@ -289,7 +293,7 @@ const animLoadingAdd = function animLoad() {
       element.classList.add("display-none");
       document.querySelector(".start-playbtn").classList.remove("display-none");
     });
-  }, 400);
+  }, 300);
 };
 
 // Fonction Loading Screen Remove
@@ -324,7 +328,7 @@ const animLoadingRemove = function animLoadR() {
     setTimeout(() => {
       document.querySelector(".load-1").classList.add("display-none");
     }, 400);
-  }, 500);
+  }, 300);
 };
 
 // Fonction Start Button

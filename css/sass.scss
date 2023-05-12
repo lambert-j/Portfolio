@@ -965,6 +965,106 @@ body {
 
   /* Animations */
 
+  .slide-right1 {
+    -webkit-animation: slide-right1 0.05s linear both;
+    animation: slide-right1 0.05s linear both;
+  }
+
+  @-webkit-keyframes slide-right1 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right1 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  .slide-right2 {
+    -webkit-animation: slide-right2 0.09s linear both;
+    animation: slide-right2 0.09s linear both;
+  }
+
+  @-webkit-keyframes slide-right2 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right2 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  .slide-right3 {
+    -webkit-animation: slide-right3 0.13s linear both;
+    animation: slide-right3 0.13s linear both;
+  }
+
+  @-webkit-keyframes slide-right3 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right3 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  .slide-right4 {
+    -webkit-animation: slide-right4 0.17s linear both;
+    animation: slide-right4 0.17s linear both;
+  }
+
+  @-webkit-keyframes slide-right4 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right4 {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+  }
   /* Responsive */
 
   @media (max-width: 576px) {
