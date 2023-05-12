@@ -3,6 +3,13 @@ function DisplayNoneRemove() {
   displayNoneGlobal();
   let elements = document.querySelector("#reboot-box");
   elements.classList.remove("display-none");
+
+  displayRemoveProfilMenu();
+  removeProfilActive();
+  removeContactActive();
+  displayRemoveContactMenu();
+  removeProjetActive();
+  displayRemoveSousMenu();
 }
 
 // Fonction du bouton annuler de la reboot box
@@ -27,20 +34,6 @@ function displayNoneGlobal() {
   });
 }
 
-// Menu Profil Display
-function DisplayProfilMenu() {
-  displayNoneGlobal();
-
-  let elementAll = document.querySelectorAll(".profil-display");
-  elementAll.forEach((element) => {
-    element.classList.remove("display-none");
-  });
-  removeProjetActive();
-  displayRemoveProfilMenu();
-  removeProfilActive();
-  displayRemoveSousMenu();
-}
-
 // Menu projets display
 
 function DisplayProjetMenu() {
@@ -49,6 +42,10 @@ function DisplayProjetMenu() {
   elementAll.forEach((element) => {
     element.classList.remove("display-none");
   });
+  displayRemoveProfilMenu();
+  removeProfilActive();
+  removeContactActive();
+  displayRemoveContactMenu();
 }
 // fonction remove display sous menu PROJET windows
 
@@ -58,6 +55,26 @@ function displayRemoveSousMenu() {
     element.classList.add("display-none");
   });
 }
+
+//////////////////////////////
+//// PROFIL
+//////////////////////////////
+
+// Menu Profil Display
+function DisplayProfilMenu() {
+  displayNoneGlobal();
+
+  let elementAll = document.querySelectorAll(".profil-display");
+  elementAll.forEach((element) => {
+    element.classList.remove("display-none");
+  });
+  removeProjetActive();
+  displayRemoveSousMenu();
+
+  removeContactActive();
+  displayRemoveContactMenu();
+}
+
 // fonction remove display SOUS MENU PROFIL windows
 
 function displayRemoveProfilMenu() {
@@ -134,9 +151,14 @@ function DisplayToggleSousMenu4() {
   element.classList.remove("display-none");
 }
 
+////////////////////////
+//Menu CONTACT
+////////////////////////
+
 // Menu Contacts display
 
 function DisplayContactMenu() {
+  displayNoneGlobal();
   let elementGlobalAll = document.querySelectorAll(".global-display");
   elementGlobalAll.forEach((element) => {
     element.classList.add("display-none");
@@ -147,7 +169,62 @@ function DisplayContactMenu() {
   });
   removeProjetActive();
   displayRemoveSousMenu();
+  displayRemoveProfilMenu();
+  removeProfilActive();
 }
+
+// fonction remove display SOUS MENU CONTACT windows
+
+function displayRemoveContactMenu() {
+  let elementAll = document.querySelectorAll(".contact-menu-windows-all");
+  elementAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+// Fonction Remove display sous menu CONTACT
+function displayRemoveContactMenu() {
+  let elementAll = document.querySelectorAll(".contact-menu-windows-all");
+  elementAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+//CONTACT Display Menu
+function DisplayToggleContactMenu1() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".contact-menu-window1");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleContactMenu2() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".contact-menu-window2");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleContactMenu3() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".contact-menu-window3");
+  element.classList.remove("display-none");
+}
+
+// fonction ACTIVE CONTACT menu
+function activeContact(clicked_id) {
+  removeContactActive();
+  let target = document.querySelector("#" + clicked_id);
+  target.classList.add("active-contact");
+}
+
+// fonction REMOVE ACTIVE CONTACT menu
+function removeContactActive() {
+  let elementProjetAll = document.querySelectorAll(".contact-menu-principal");
+  elementProjetAll.forEach((element) => {
+    element.classList.remove("active-contact");
+  });
+}
+
+/////////////////////////////////////////////
 
 // fonction remove active projet menu
 function removeProjetActive() {
