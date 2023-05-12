@@ -603,7 +603,10 @@ body section .image-box-sous-menu1 {
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu2 {
-  background-color: rgb(218, 198, 16);
+  background-image: url(../images/memorygame.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 body section .image-box-sous-menu3 {
   background-color: rgb(16, 218, 93);
