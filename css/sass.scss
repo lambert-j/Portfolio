@@ -1062,25 +1062,37 @@ body {
   }
   /* Responsive */
 
-  // @media (max-width: 600px) {
-  //   .navbar-items-main {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //   }
-  //   .navbar-items-mini-main {
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  //   .dot-deco1 {
-  //     position: absolute;
-  //     top: 15px;
-  //   }
-  // }
-}
+  //////////////////////////////////////////////
+  ////////////////////////////
+  /////// Version Mobile
+  ////////////////////////////
+  //////////////////////////////////////////////
 
-//////////////////////////////////////////////
-////////////////////////////
-/////// Version Mobile
-////////////////////////////
-//////////////////////////////////////////////
+  @media (max-width: 600px) {
+    #mobile-presentation {
+      height: 15vh;
+    }
+    .mobile-window-principal {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      .menu-deco {
+        display: flex;
+        gap: 4px;
+        height: 90%;
+
+        .menu-deco-1 {
+          width: 10px;
+          background-color: $light-gray;
+        }
+
+        .menu-deco-2 {
+          width: 4px;
+          background-color: $light-gray;
+        }
+      }
+    }
+  }
+}

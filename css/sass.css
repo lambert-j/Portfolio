@@ -12856,4 +12856,29 @@ body .slide-right4 {
   100% {
     transform: translateX(0px);
   }
+}
+@media (max-width: 600px) {
+  body #mobile-presentation {
+    height: 15vh;
+  }
+  body .mobile-window-principal {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  body .mobile-window-principal .menu-deco {
+    display: flex;
+    gap: 4px;
+    height: 90%;
+  }
+  body .mobile-window-principal .menu-deco .menu-deco-1 {
+    width: 10px;
+    background-color: #afaa96;
+  }
+  body .mobile-window-principal .menu-deco .menu-deco-2 {
+    width: 4px;
+    background-color: #afaa96;
+  }
 }/*# sourceMappingURL=sass.css.map */
