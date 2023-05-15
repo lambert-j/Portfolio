@@ -366,3 +366,9 @@ function buttonStartAnimOut() {
   document.querySelector(".playbtn-box2").classList.add("playbtn-box2-animout");
   document.querySelector(".playbtn-box1").classList.add("playbtn-box1-animout");
 }
+
+//////////////////////////////////////////////
+////////////////////////////
+/////// Version Mobile
+////////////////////////////
+//////////////////////////////////////////////
