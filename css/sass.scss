@@ -3,6 +3,7 @@
 $body-color: #b0ab969a;
 $light-gray: #afaa96;
 $dark-gray: #4a473e;
+$window-gray: #dfdac4;
 
 /* body - global */
 body {
@@ -527,7 +528,12 @@ body {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 40px;
+      border-top: 30px solid $dark-gray;
+      background-color: $window-gray;
+      padding: 15px 10px 0px 10px;
+      box-shadow: 0px 0px 5px $dark-gray;
+      animation: scale-up-window 0.1s 1 forwards;
     }
 
     .profil-menu-box-principal {
@@ -654,7 +660,12 @@ body {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 40px;
+      border-top: 30px solid $dark-gray;
+      background-color: $window-gray;
+      padding: 15px 10px 0px 10px;
+      box-shadow: 0px 0px 5px $dark-gray;
+      animation: scale-up-window 0.1s 1 forwards;
     }
 
     .sous-menu-box-principal {
@@ -786,7 +797,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+    border-top: 30px solid $dark-gray;
+    background-color: $window-gray;
+    padding: 15px 10px 0px 10px;
+    box-shadow: 0px 0px 5px $dark-gray;
+    animation: scale-up-window 0.1s 1 forwards;
   }
 
   .contact-menu-box-principal {
@@ -935,6 +951,15 @@ body {
 
   /* Animations */
 
+  @keyframes scale-up-window {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
   .slide-right1 {
     -webkit-animation: slide-right1 0.05s linear both;
     animation: slide-right1 0.05s linear both;
@@ -1037,12 +1062,19 @@ body {
   }
   /* Responsive */
 
-  @media (max-width: 576px) {
-    .projet-menu {
-      display: none;
-    }
-    .sous-menu {
-      display: none;
-    }
-  }
+  // @media (max-width: 600px) {
+  //   .navbar-items-main {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
+  //   .navbar-items-mini-main {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  //   .dot-deco1 {
+  //     position: absolute;
+  //     top: 15px;
+  //   }
+  // }
 }

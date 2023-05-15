@@ -3,7 +3,7 @@ function DisplayNoneRemove() {
   displayNoneGlobal();
   let elements = document.querySelector("#reboot-box");
   elements.classList.remove("display-none");
-
+  rebootBloqueClic();
   displayRemoveProfilMenu();
   removeProfilActive();
   removeContactActive();
@@ -17,6 +17,7 @@ function displayNoneAddRebootBox() {
   let elements = document.querySelector("#reboot-box");
   elements.classList.add("display-none");
   removeNavActive();
+  rebootAllowClic();
 }
 
 // Fonction reboot Oui Loading Screen Anim
@@ -24,6 +25,17 @@ function rebootBoxYes() {
   let elements = document.querySelector("#reboot-box");
   elements.classList.add("display-none");
   removeNavActive();
+  rebootAllowClic();
+}
+
+// fonction bloque le clic sur la nav
+function rebootBloqueClic() {
+  let element = document.querySelector(".navbar");
+  element.style.pointerEvents = "none";
+}
+function rebootAllowClic() {
+  let element = document.querySelector(".navbar");
+  element.style.pointerEvents = "";
 }
 
 // fonction ADD DISPLAY NONE to Global
