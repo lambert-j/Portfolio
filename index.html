@@ -29,7 +29,7 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="loadbox backimg">
+    <div class="loadbox backimg display-none">
       <div class="load-1 load-all loaddiv display-none"></div>
       <div class="load-2 load-all loaddiv display-none"></div>
       <div class="load-3 load-all loaddiv display-none"></div>
@@ -39,7 +39,10 @@
       <div class="load-7 load-all loaddiv display-none"></div>
     </div>
     <!-- Start Button -->
-    <div onclick="animLoadingRemove(), rebootBoxYes()" class="start-playbtn">
+    <div
+      onclick="animLoadingRemove(), rebootBoxYes()"
+      class="start-playbtn display-none"
+    >
       <div class="playbtn-box1"></div>
       <div class="playbtn-box2"></div>
       <div class="playbtn"></div>
@@ -475,7 +478,231 @@
           <div class="menu-deco-1"></div>
           <div class="menu-deco-2"></div>
         </div>
-        <div class="mobile-window-right"></div>
+        <div class="mobile-window-right">
+          <!-- PROFIL -->
+          <div
+            class="mobile-profil-display global-display mobile-profil-menu mobile-profil-menu-display display-none"
+          >
+            <div
+              onclick="DisplayToggleProfilMenu1(), activeProfil(this.id)"
+              class="mobile-profil-menu-principal slide-right1"
+              id="mobile-profil-1"
+            >
+              <div class="mobile-profil-menu-deco"></div>
+              <div class="mobile-profil-menu-items">
+                <div class="mobile-profil-menu-barre"></div>
+                <div class="mobile-profil-menu-text">Projet 1</div>
+              </div>
+              <div class="mobile-profil-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleProfilMenu2(), activeProfil(this.id)"
+              class="mobile-profil-menu-principal slide-right2"
+              id="mobile-profil-2"
+            >
+              <div class="mobile-profil-menu-deco"></div>
+              <div class="mobile-profil-menu-items">
+                <div class="mobile-profil-menu-barre"></div>
+                <div class="mobile-profil-menu-text">Projet 2</div>
+              </div>
+              <div class="mobile-profil-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleProfilMenu3(), activeProfil(this.id)"
+              class="mobile-profil-menu-principal slide-right3"
+              id="mobile-profil-3"
+            >
+              <div class="mobile-profil-menu-deco"></div>
+              <div class="mobile-profil-menu-items">
+                <div class="mobile-profil-menu-barre"></div>
+                <div class="mobile-profil-menu-text">Projet 3</div>
+              </div>
+              <div class="mobile-profil-menu-deco"></div>
+            </div>
+          </div>
+
+          <!-- PROJET -->
+          <div
+            class="mobile-projet-menu mobile-projet-menu-display global-display display-none"
+          >
+            <div
+              onclick="DisplayToggleSousMenu1(), activeProjet(this.id)"
+              class="mobile-projet-menu-principal slide-right1"
+              id="mobile-menu-1"
+            >
+              <div class="mobile-projet-menu-deco"></div>
+              <div class="mobile-projet-menu-items">
+                <div class="mobile-projet-menu-barre"></div>
+                <div class="mobile-projet-menu-text">OmniFood</div>
+              </div>
+              <div class="mobile-projet-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu2(), activeProjet(this.id)"
+              class="mobile-projet-menu-principal slide-right2"
+              id="mobile-menu-2"
+            >
+              <div class="mobile-projet-menu-deco"></div>
+              <div class="mobile-projet-menu-items">
+                <div class="mobile-projet-menu-barre"></div>
+                <div class="mobile-projet-menu-text">Memory Game</div>
+              </div>
+              <div class="mobile-projet-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu3(), activeProjet(this.id)"
+              class="mobile-projet-menu-principal slide-right3"
+              id="mobile-menu-3"
+            >
+              <div class="mobile-projet-menu-deco"></div>
+              <div class="mobile-projet-menu-items">
+                <div class="mobile-projet-menu-barre"></div>
+                <div class="mobile-projet-menu-text">Projet 3</div>
+              </div>
+              <div class="mobile-projet-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu4(), activeProjet(this.id)"
+              class="mobile-projet-menu-principal slide-right4"
+              id="mobile-menu-4"
+            >
+              <div class="mobile-projet-menu-deco"></div>
+              <div class="mobile-projet-menu-items">
+                <div class="mobile-projet-menu-barre"></div>
+                <div class="mobile-projet-menu-text">Projet 4</div>
+              </div>
+              <div class="mobile-projet-menu-deco"></div>
+            </div>
+          </div>
+          <!-- SOUS MENU PROJET -->
+          <div class="mobile-sous-menu projet-menu-display global-display">
+            <div
+              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all display-none"
+            >
+              <div class="mobile-sous-menu-titre">OmniFood</div>
+              <div class="mobile-image-box-sous-menu1"></div>
+              <div class="mobile-sous-menu-box-principal">
+                <div class="mobile-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  href="https://omnifood-lambert.netlify.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor1"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+            <!-- Sous Menu 2 -->
+            <div class="mobile-sous-menu-window2 mobile-sous-menu-windows-all">
+              <div class="mobile-sous-menu-titre">Memory Game</div>
+              <div class="mobile-image-box-sous-menu2"></div>
+              <div class="mobile-sous-menu-box-principal">
+                <div class="mobile-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  href="https://lambert-jordan-memorygame.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor2"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+            <!-- Sous Menu 3 -->
+            <div
+              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all display-none"
+            >
+              <div class="mobile-sous-menu-titre">OmniFood</div>
+              <div class="mobile-image-box-sous-menu3"></div>
+              <div class="mobile-sous-menu-box-principal">
+                <div class="mobile-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a class="mobile-sous-menu-link-box mobile-sous-menu-anchor3"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+            <!-- Sous Menu 4 -->
+            <div
+              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all display-none"
+            >
+              <div class="mobile-sous-menu-titre">OmniFood</div>
+              <div class="mobile-image-box-sous-menu4"></div>
+              <div class="mobile-sous-menu-box-principal">
+                <div class="mobile-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  href="https://omnifood-lambert.netlify.app"
+                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor4"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+
+          <div
+            class="mobile-contact-display global-display mobile-contact-menu mobile-contact-menu-display display-none"
+          >
+            <div
+              onclick="DisplayToggleProfilMenu1(), activeProfil(this.id)"
+              class="mobile-contact-menu-principal slide-right1"
+              id="mobile-contact-1"
+            >
+              <div class="mobile-contact-menu-deco"></div>
+              <div class="mobile-contact-menu-items">
+                <div class="mobile-contact-menu-barre"></div>
+                <div class="mobile-contact-menu-text">GitHub</div>
+              </div>
+              <div class="mobile-contact-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleProfilMenu2(), activeProfil(this.id)"
+              class="mobile-contact-menu-principal slide-right2"
+              id="mobile-contact-2"
+            >
+              <div class="mobile-contact-menu-deco"></div>
+              <div class="mobile-contact-menu-items">
+                <div class="mobile-contact-menu-barre"></div>
+                <div class="mobile-contact-menu-text">LinkedIn</div>
+              </div>
+              <div class="mobile-contact-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleProfilMenu3(), activeProfil(this.id)"
+              class="mobile-contact-menu-principal slide-right3"
+              id="mobile-contact-3"
+            >
+              <div class="mobile-contact-menu-deco"></div>
+              <div class="mobile-contact-menu-items">
+                <div class="mobile-contact-menu-barre"></div>
+                <div class="mobile-contact-menu-text">Formulaire</div>
+              </div>
+              <div class="mobile-contact-menu-deco"></div>
+            </div>
+          </div>
+          <!-- SOUS MENU CONTACT -->
+
+          <!--  -->
+        </div>
       </div>
 
       <div class="dot-deco"></div>

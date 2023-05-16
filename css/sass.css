@@ -12859,19 +12859,21 @@ body .slide-right4 {
 }
 @media (max-width: 600px) {
   body #mobile-presentation {
-    height: 15vh;
+    height: 10vh;
   }
   body .mobile-window-principal {
     height: 75vh;
     display: flex;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
   }
   body .mobile-window-principal .menu-deco {
     display: flex;
     gap: 4px;
-    height: 90%;
+    height: 70vh;
   }
   body .mobile-window-principal .menu-deco .menu-deco-1 {
     width: 10px;
@@ -12880,5 +12882,246 @@ body .slide-right4 {
   body .mobile-window-principal .menu-deco .menu-deco-2 {
     width: 4px;
     background-color: #afaa96;
+  }
+  body .mobile-window-principal .mobile-profil-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 75vw;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal .mobile-profil-menu-items {
+    height: 40px;
+    width: 100%;
+    background-color: #afaa96;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal .mobile-profil-menu-items .mobile-profil-menu-barre {
+    height: 100%;
+    width: 10px;
+    background-color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal .mobile-profil-menu-items .mobile-profil-menu-text {
+    background-color: #afaa96;
+    margin-left: 10px;
+    color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal .mobile-profil-menu-deco {
+    width: 100%;
+    height: 2px;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-items:hover {
+    box-shadow: 1px 1px 3px #4a473e;
+  }
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal:hover .mobile-profil-menu-items,
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal:hover .mobile-profil-menu-deco,
+  body .mobile-window-principal .mobile-profil-menu .mobile-profil-menu-principal:hover .mobile-profil-menu-text {
+    animation-name: scale-up-hor-left;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #4a473e;
+    color: #afaa96;
+    cursor: pointer;
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+  body .mobile-window-principal .mobile-projet-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 75vw;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal .mobile-projet-menu-items {
+    height: 40px;
+    width: 100%;
+    background-color: #afaa96;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal .mobile-projet-menu-items .mobile-projet-menu-barre {
+    height: 100%;
+    width: 10px;
+    background-color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal .mobile-projet-menu-items .mobile-projet-menu-text {
+    background-color: #afaa96;
+    margin-left: 10px;
+    color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal .mobile-projet-menu-deco {
+    width: 100%;
+    height: 2px;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-items:hover {
+    box-shadow: 1px 1px 3px #4a473e;
+  }
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal:hover .mobile-projet-menu-items,
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal:hover .mobile-projet-menu-deco,
+  body .mobile-window-principal .mobile-projet-menu .mobile-projet-menu-principal:hover .mobile-projet-menu-text {
+    animation-name: scale-up-hor-left;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #4a473e;
+    color: #afaa96;
+    cursor: pointer;
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+  body .mobile-window-principal .mobile-contact-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 75vw;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal .mobile-contact-menu-items {
+    height: 40px;
+    width: 100%;
+    background-color: #afaa96;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal .mobile-contact-menu-items .mobile-contact-menu-barre {
+    height: 100%;
+    width: 10px;
+    background-color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal .mobile-contact-menu-items .mobile-contact-menu-text {
+    background-color: #afaa96;
+    margin-left: 10px;
+    color: #4a473e;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal .mobile-contact-menu-deco {
+    width: 100%;
+    height: 2px;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-items:hover {
+    box-shadow: 1px 1px 3px #4a473e;
+  }
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal:hover .mobile-contact-menu-items,
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal:hover .mobile-contact-menu-deco,
+  body .mobile-window-principal .mobile-contact-menu .mobile-contact-menu-principal:hover .mobile-contact-menu-text {
+    animation-name: scale-up-hor-left;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #4a473e;
+    color: #afaa96;
+    cursor: pointer;
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+  body .mobile-window-principal .mobile-sous-menu-window1,
+  body .mobile-window-principal .mobile-sous-menu-window2,
+  body .mobile-window-principal .mobile-sous-menu-window3,
+  body .mobile-window-principal .mobile-sous-menu-window4 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdac4;
+    box-shadow: 0px 0px 5px #4a473e;
+    animation: scale-up-window 0.1s 1 forwards;
+  }
+  body .mobile-window-principal .mobile-sous-menu-titre {
+    background-color: #4a473e;
+    color: #afaa96;
+    font-size: 1.6rem;
+    padding-left: 20px;
+  }
+  body .mobile-window-principal .mobile-sous-menu-box-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 15px 0px 15px;
+  }
+  body .mobile-window-principal .mobile-image-box-sous-menu1,
+  body .mobile-window-principal .mobile-image-box-sous-menu2,
+  body .mobile-window-principal .mobile-image-box-sous-menu3,
+  body .mobile-window-principal .mobile-image-box-sous-menu4 {
+    height: 30vh;
+    width: 100%;
+  }
+  body .mobile-window-principal .mobile-image-box-sous-menu1 {
+    background-image: url(../images/OmniFood4-3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .mobile-window-principal .mobile-image-box-sous-menu2 {
+    background-image: url(../images/memorygame4-3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .mobile-window-principal .mobile-image-box-sous-menu3 {
+    background-color: rgb(16, 218, 93);
+  }
+  body .mobile-window-principal .mobile-image-box-sous-menu4 {
+    background-color: rgb(19, 16, 218);
+  }
+  body .mobile-window-principal .mobile-sous-menu-text-box {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  body .mobile-window-principal .mobile-sous-menu-link-box {
+    align-self: flex-end;
+    color: #4a473e;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  body .mobile-window-principal .mobile-sous-menu-link-box:hover {
+    -webkit-text-decoration: underline solid #4a473e 2px;
+            text-decoration: underline solid #4a473e 2px;
   }
 }/*# sourceMappingURL=sass.css.map */
