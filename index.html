@@ -470,7 +470,16 @@
         ////////////////////////////
         ////////////////////////////////////////////// -->
     <div id="version-mobile">
-      <div id="mobile-presentation">Lambert Jordan</div>
+      <div id="mobile-presentation">
+        <div class="mobile-presentation-btn-menu">
+          <div class="mobile-presentation-btn-menu-barre"></div>
+          <div class="mobile-presentation-btn-menu-text">MENU</div>
+        </div>
+        <div class="mobile-presentation-btn-retour">
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+      </div>
 
       <div class="dot-deco"></div>
       <div class="mobile-window-principal">
@@ -479,12 +488,63 @@
           <div class="menu-deco-2"></div>
         </div>
         <div class="mobile-window-right">
+          <!-- NAV MOBILE -->
+          <div class="mobile-nav-menu mobile-nav-menu-display global-display">
+            <div
+              onclick="DisplayToggleSousMenu1()"
+              class="mobile-nav-menu-principal slide-right1"
+              id="mobile-nav-menu-1"
+            >
+              <div class="mobile-nav-menu-deco"></div>
+              <div class="mobile-nav-menu-items">
+                <div class="mobile-nav-menu-barre"></div>
+                <div class="mobile-nav-menu-text">Profil</div>
+              </div>
+              <div class="mobile-nav-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu2()"
+              class="mobile-nav-menu-principal slide-right2"
+              id="mobile-nav-menu-2"
+            >
+              <div class="mobile-nav-menu-deco"></div>
+              <div class="mobile-nav-menu-items">
+                <div class="mobile-nav-menu-barre"></div>
+                <div class="mobile-nav-menu-text">Projets</div>
+              </div>
+              <div class="mobile-nav-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu3()"
+              class="mobile-nav-menu-principal slide-right3"
+              id="mobile-nav-menu-3"
+            >
+              <div class="mobile-nav-menu-deco"></div>
+              <div class="mobile-nav-menu-items">
+                <div class="mobile-nav-menu-barre"></div>
+                <div class="mobile-nav-menu-text">Contacts</div>
+              </div>
+              <div class="mobile-nav-menu-deco"></div>
+            </div>
+            <div
+              onclick="DisplayToggleSousMenu4()"
+              class="mobile-nav-menu-principal slide-right4"
+              id="mobile-nav-menu-4"
+            >
+              <div class="mobile-nav-menu-deco"></div>
+              <div class="mobile-nav-menu-items">
+                <div class="mobile-nav-menu-barre"></div>
+                <div class="mobile-nav-menu-text">Reboot</div>
+              </div>
+              <div class="mobile-nav-menu-deco"></div>
+            </div>
+          </div>
           <!-- PROFIL -->
           <div
             class="mobile-profil-display global-display mobile-profil-menu mobile-profil-menu-display display-none"
           >
             <div
-              onclick="DisplayToggleProfilMenu1(), activeProfil(this.id)"
+              onclick="DisplayToggleProfilMenu1()"
               class="mobile-profil-menu-principal slide-right1"
               id="mobile-profil-1"
             >
@@ -496,7 +556,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleProfilMenu2(), activeProfil(this.id)"
+              onclick="DisplayToggleProfilMenu2()"
               class="mobile-profil-menu-principal slide-right2"
               id="mobile-profil-2"
             >
@@ -508,7 +568,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleProfilMenu3(), activeProfil(this.id)"
+              onclick="DisplayToggleProfilMenu3()"
               class="mobile-profil-menu-principal slide-right3"
               id="mobile-profil-3"
             >
@@ -520,13 +580,80 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
           </div>
-
+          <!-- SOUS MENU PROFIL -->
+          <div
+            class="mobile-profil-sous-menu mobile-profil-menu-display global-display display-none"
+          >
+            <div
+              class="mobile-profil-sous-menu-window1 mobile-profil-sous-menu-windows-all global-display"
+            >
+              <div class="mobile-profil-sous-menu-titre">profil1</div>
+              <div class="mobile-profil-image-box-sous-menu1"></div>
+              <div class="mobile-profil-sous-menu-box-principal">
+                <div class="mobile-profil-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  href="https://omnifood-lambert.netlify.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor1"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+            <!-- Sous Menu 2 -->
+            <div
+              class="mobile-profil-sous-menu-window2 mobile-profil-sous-menu-windows-all global-display display-none"
+            >
+              <div class="mobile-profil-sous-menu-titre">LinkedIn</div>
+              <div class="mobile-profil-image-box-sous-menu2"></div>
+              <div class="mobile-profil-sous-menu-box-principal">
+                <div class="mobile-profil-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  href="https://lambert-jordan-memorygame.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor2"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+            <!-- Sous Menu 3 -->
+            <div
+              class="mobile-profil-sous-menu-window3 mobile-profil-sous-menu-windows-all global-display display-none"
+            >
+              <div class="mobile-profil-sous-menu-titre">Formulaire</div>
+              <div class="mobile-profil-image-box-sous-menu3"></div>
+              <div class="mobile-profil-sous-menu-box-principal">
+                <div class="mobile-profil-sous-menu-text-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  qui quaerat totam facilis, architecto delectus quos dolorum
+                  eaque impedit debitis praesentium voluptatibus quod cupiditate
+                  consectetur nostrum culpa nihil porro quo?
+                </div>
+                <a
+                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor3"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--  -->
           <!-- PROJET -->
           <div
             class="mobile-projet-menu mobile-projet-menu-display global-display display-none"
           >
             <div
-              onclick="DisplayToggleSousMenu1(), activeProjet(this.id)"
+              onclick="DisplayToggleSousMenu1()"
               class="mobile-projet-menu-principal slide-right1"
               id="mobile-menu-1"
             >
@@ -538,7 +665,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu2(), activeProjet(this.id)"
+              onclick="DisplayToggleSousMenu2()"
               class="mobile-projet-menu-principal slide-right2"
               id="mobile-menu-2"
             >
@@ -550,7 +677,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu3(), activeProjet(this.id)"
+              onclick="DisplayToggleSousMenu3()"
               class="mobile-projet-menu-principal slide-right3"
               id="mobile-menu-3"
             >
@@ -562,7 +689,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu4(), activeProjet(this.id)"
+              onclick="DisplayToggleSousMenu4()"
               class="mobile-projet-menu-principal slide-right4"
               id="mobile-menu-4"
             >
@@ -579,7 +706,7 @@
             class="mobile-sous-menu mobile-projet-menu-display global-display display-none"
           >
             <div
-              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all display-none"
+              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu1"></div>
@@ -601,7 +728,7 @@
             </div>
             <!-- Sous Menu 2 -->
             <div
-              class="mobile-sous-menu-window2 mobile-sous-menu-windows-all display-none"
+              class="mobile-sous-menu-window2 mobile-sous-menu-windows-all global-display display-none"
             >
               <div class="mobile-sous-menu-titre">Memory Game</div>
               <div class="mobile-image-box-sous-menu2"></div>
@@ -623,7 +750,7 @@
             </div>
             <!-- Sous Menu 3 -->
             <div
-              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all display-none"
+              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu3"></div>
@@ -641,7 +768,7 @@
             </div>
             <!-- Sous Menu 4 -->
             <div
-              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all display-none"
+              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu4"></div>
@@ -664,7 +791,7 @@
           <!-- CONTACT -->
 
           <div
-            class="mobile-contact-display global-display mobile-contact-menu mobile-contact-menu-display"
+            class="mobile-contact-display global-display mobile-contact-menu mobile-contact-menu-display display-none"
           >
             <div
               onclick="DisplayToggleContactSousMenu1()"
@@ -708,9 +835,9 @@
             class="mobile-contact-sous-menu mobile-projet-menu-display global-display"
           >
             <div
-              class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all display-none"
+              class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all global-display display-none"
             >
-              <div class="mobile-contact-sous-menu-titre">OmniFood</div>
+              <div class="mobile-contact-sous-menu-titre">GitHub</div>
               <div class="mobile-contact-image-box-sous-menu1"></div>
               <div class="mobile-contact-sous-menu-box-principal">
                 <div class="mobile-contact-sous-menu-text-box">
@@ -730,9 +857,9 @@
             </div>
             <!-- Sous Menu 2 -->
             <div
-              class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all display-none"
+              class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all global-display display-none"
             >
-              <div class="mobile-contact-sous-menu-titre">Memory Game</div>
+              <div class="mobile-contact-sous-menu-titre">LinkedIn</div>
               <div class="mobile-contact-image-box-sous-menu2"></div>
               <div class="mobile-contact-sous-menu-box-principal">
                 <div class="mobile-contact-sous-menu-text-box">
@@ -752,9 +879,9 @@
             </div>
             <!-- Sous Menu 3 -->
             <div
-              class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all display-none"
+              class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all global-display display-none"
             >
-              <div class="mobile-contact-sous-menu-titre">OmniFood</div>
+              <div class="mobile-contact-sous-menu-titre">Formulaire</div>
               <div class="mobile-contact-image-box-sous-menu3"></div>
               <div class="mobile-contact-sous-menu-box-principal">
                 <div class="mobile-contact-sous-menu-text-box">
