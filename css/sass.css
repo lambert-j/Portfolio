@@ -12857,6 +12857,28 @@ body .slide-right4 {
     transform: translateX(0px);
   }
 }
+body .slide-left-mobile {
+  animation: slide-left-mobile 0.1s linear both;
+}
+@keyframes slide-left-mobile {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+body .slide-right-mobile {
+  animation: slide-right-mobile 0.1s linear both;
+}
+@keyframes slide-right-mobile {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
 @media (max-width: 600px) {
   body #mobile-presentation {
     height: 10vh;
@@ -13121,6 +13143,70 @@ body .slide-right4 {
     font-size: 1.3rem;
   }
   body .mobile-window-principal .mobile-sous-menu-link-box:hover {
+    -webkit-text-decoration: underline solid #4a473e 2px;
+            text-decoration: underline solid #4a473e 2px;
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-window1,
+  body .mobile-window-principal .mobile-contact-sous-menu-window2,
+  body .mobile-window-principal .mobile-contact-sous-menu-window3,
+  body .mobile-window-principal .mobile-contact-sous-menu-window4 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdac4;
+    box-shadow: 0px 0px 5px #4a473e;
+    animation: scale-up-window 0.1s 1 forwards;
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-titre {
+    background-color: #4a473e;
+    color: #afaa96;
+    font-size: 1.6rem;
+    padding-left: 20px;
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-box-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 15px 0px 15px;
+  }
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu1,
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu2,
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu3,
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu4 {
+    height: 30vh;
+    width: 100%;
+  }
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu1 {
+    background-image: url(../images/OmniFood4-3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu2 {
+    background-image: url(../images/memorygame4-3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu3 {
+    background-color: rgb(16, 218, 93);
+  }
+  body .mobile-window-principal .mobile-contact-image-box-sous-menu4 {
+    background-color: rgb(19, 16, 218);
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-text-box {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-link-box {
+    align-self: flex-end;
+    color: #4a473e;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  body .mobile-window-principal .mobile-contact-sous-menu-link-box:hover {
     -webkit-text-decoration: underline solid #4a473e 2px;
             text-decoration: underline solid #4a473e 2px;
   }

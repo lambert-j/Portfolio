@@ -372,3 +372,31 @@ function buttonStartAnimOut() {
 /////// Version Mobile
 ////////////////////////////
 //////////////////////////////////////////////
+
+function displayRemoveContactMenu() {
+  document.querySelector(".mobile-contact-menu").classList.add("display-none");
+  let elementAll = document.querySelectorAll(
+    ".mobile-contact-sous-menu-windows-all"
+  );
+  elementAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+//Profil Display Sous Menu Contact
+function DisplayToggleContactSousMenu1() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".mobile-contact-sous-menu-window1 ");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleContactSousMenu2() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".mobile-contact-sous-menu-window2");
+  element.classList.remove("display-none");
+}
+
+function DisplayToggleContactSousMenu3() {
+  displayRemoveContactMenu();
+  let element = document.querySelector(".mobile-contact-sous-menu-window3");
+  element.classList.remove("display-none");
+}
