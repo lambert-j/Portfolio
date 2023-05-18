@@ -12880,6 +12880,176 @@ body .slide-right-mobile {
   }
 }
 @media (max-width: 600px) {
+  body .mobile-start-playbtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 998;
+  }
+  body .mobile-start-playbtn .mobile-playbtn-box1-animout {
+    animation: rotata 0.5s 1 forwards;
+  }
+  body .mobile-start-playbtn .mobile-playbtn-box2-animout {
+    animation: scale 0.5s 1 forwards;
+  }
+  body .mobile-start-playbtn .mobile-playbtn-anim {
+    animation: glitchstart 0.5s 1 forwards;
+  }
+  body .mobile-start-playbtn .mobile-playbtn-box1 {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid white;
+    position: absolute;
+    transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+  }
+  body .mobile-start-playbtn .mobile-playbtn-box2 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    position: absolute;
+    transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) rotate(45deg);
+  }
+  body .mobile-start-playbtn .mobile-playbtn {
+    background-image: url(../images/iconmonstr-media-control-48.svg);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    width: 25px;
+    height: 25px;
+    transform: translate(calc((100vw - 18px) / 2), calc((100vh - 25px) / 2));
+  }
+  @keyframes scale {
+    0% {
+      transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(1) rotate(45deg);
+    }
+    100% {
+      transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(0.8) rotate(45deg);
+    }
+  }
+  @keyframes scale-out {
+    0% {
+      transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(0.8) rotate(45deg);
+    }
+    100% {
+      transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2)) scale(1) rotate(45deg);
+    }
+  }
+  @keyframes rotata {
+    0% {
+      transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+    }
+    100% {
+      transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(90deg);
+    }
+  }
+  @keyframes rotata-out {
+    0% {
+      transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(90deg);
+    }
+    100% {
+      transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2)) rotate(45deg);
+    }
+  }
+  @keyframes glitchstart {
+    0% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    5% {
+      filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    10% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    40% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    45% {
+      filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    50% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    65% {
+      filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    70% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    90% {
+      filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    93% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+    100% {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(101%) contrast(103%);
+    }
+  }
+  body #mobile-reboot-box {
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    z-index: 9;
+    animation: scale-up-center 0.1s 1 forwards;
+  }
+  @keyframes scale-up-center {
+    0% {
+      transform: translate(10vw, 30vh) scale(0.5);
+    }
+    100% {
+      transform: translate(10vw, 30vh) scale(1);
+    }
+  }
+  body #mobile-reboot-box #mobile-reboot-title-box {
+    background-color: #4b483f;
+    height: 25%;
+  }
+  body #mobile-reboot-box #mobile-reboot-title-box #mobile-reboot-title-text {
+    text-align: center;
+    transform: translateY(calc((50% + 1rem) / 2));
+    color: #afaa96;
+    font-size: 2rem;
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box {
+    background-color: #afaa96;
+    display: flex;
+    height: 75%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-message {
+    color: #4a473e;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-text-mini-box {
+    display: flex;
+    justify-content: space-around;
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-text-mini-box .mobile-reboot-text-1 {
+    width: 40%;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    background-color: #afaa96;
+    color: #4a473e;
+    cursor: pointer;
+    border: 1px solid hsla(45, 9%, 27%, 0.5);
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-text-mini-box .mobile-reboot-text-1:hover {
+    background-color: #4a473e;
+    color: #afaa96;
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-text-mini-box .mobile-reboot-text-2 {
+    width: 40%;
+    background-color: #afaa96;
+    color: #4a473e;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid hsla(45, 9%, 27%, 0.5);
+  }
+  body #mobile-reboot-box #mobile-reboot-text-box #mobile-reboot-text-mini-box .mobile-reboot-text-2:hover {
+    background-color: #4a473e;
+    color: #afaa96;
+  }
   body #mobile-presentation {
     height: 10vh;
     display: flex;

@@ -1115,13 +1115,295 @@ body {
   }
   /* Responsive */
 
-  //////////////////////////////////////////////
-  ////////////////////////////
-  /////// Version Mobile
-  ////////////////////////////
-  //////////////////////////////////////////////
-
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////                                VERSION MOBILE
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   @media (max-width: 600px) {
+    // START BTN
+    .mobile-start-playbtn {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      z-index: 998;
+
+      // &:hover .mobile-playbtn-box1 {
+      //   animation: rotata 0.5s 1 forwards;
+      // }
+
+      // &:hover .mobile-playbtn-box2 {
+      //   animation: scale 0.5s 1 forwards;
+      // }
+
+      .mobile-playbtn-box1-animout {
+        animation: rotata 0.5s 1 forwards;
+      }
+
+      .mobile-playbtn-box2-animout {
+        animation: scale 0.5s 1 forwards;
+      }
+      .mobile-playbtn-anim {
+        animation: glitchstart 0.5s 1 forwards;
+      }
+
+      .mobile-playbtn-box1 {
+        width: 45px;
+        height: 45px;
+        background-color: rgba(240, 248, 255, 0);
+        border: 1px solid white;
+        position: absolute;
+        transform: translate(calc((100vw - 46px) / 2), calc((100vh - 46px) / 2))
+          rotate(45deg);
+      }
+
+      .mobile-playbtn-box2 {
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        position: absolute;
+        transform: translate(calc((100vw - 51px) / 2), calc((100vh - 51px) / 2))
+          rotate(45deg);
+      }
+
+      .mobile-playbtn {
+        background-image: url(../images/iconmonstr-media-control-48.svg);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+          brightness(101%) contrast(103%);
+        width: 25px;
+        height: 25px;
+        transform: translate(
+          calc((100vw - 18px) / 2),
+          calc((100vh - 25px) / 2)
+        );
+      }
+
+      @keyframes scale {
+        0% {
+          transform: translate(
+              calc((100vw - 51px) / 2),
+              calc((100vh - 51px) / 2)
+            )
+            scale(1) rotate(45deg);
+        }
+        100% {
+          transform: translate(
+              calc((100vw - 51px) / 2),
+              calc((100vh - 51px) / 2)
+            )
+            scale(0.8) rotate(45deg);
+        }
+      }
+      @keyframes scale-out {
+        0% {
+          transform: translate(
+              calc((100vw - 51px) / 2),
+              calc((100vh - 51px) / 2)
+            )
+            scale(0.8) rotate(45deg);
+        }
+        100% {
+          transform: translate(
+              calc((100vw - 51px) / 2),
+              calc((100vh - 51px) / 2)
+            )
+            scale(1) rotate(45deg);
+        }
+      }
+      @keyframes rotata {
+        0% {
+          transform: translate(
+              calc((100vw - 46px) / 2),
+              calc((100vh - 46px) / 2)
+            )
+            rotate(45deg);
+        }
+        100% {
+          transform: translate(
+              calc((100vw - 46px) / 2),
+              calc((100vh - 46px) / 2)
+            )
+            rotate(90deg);
+        }
+      }
+      @keyframes rotata-out {
+        0% {
+          transform: translate(
+              calc((100vw - 46px) / 2),
+              calc((100vh - 46px) / 2)
+            )
+            rotate(90deg);
+        }
+        100% {
+          transform: translate(
+              calc((100vw - 46px) / 2),
+              calc((100vh - 46px) / 2)
+            )
+            rotate(45deg);
+        }
+      }
+
+      @keyframes glitchstart {
+        0% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        5% {
+          filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        10% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        40% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        45% {
+          filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        50% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        65% {
+          filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        70% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        90% {
+          filter: invert(5%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        93% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+        100% {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg)
+            brightness(101%) contrast(103%);
+        }
+      }
+    }
+    // REBOOT BOX
+    #mobile-reboot-box {
+      position: absolute;
+      width: 80vw;
+      height: 40vh;
+      z-index: 9;
+      animation: scale-up-center 0.1s 1 forwards;
+
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: translate(
+              calc((100vw - 80vw) / 2),
+              calc((100vh - 40vh) / 2)
+            )
+            scale(0.5);
+          transform: translate(
+              calc((100vw - 80vw) / 2),
+              calc((100vh - 40vh) / 2)
+            )
+            scale(0.5);
+        }
+        100% {
+          -webkit-transform: translate(
+              calc((100vw - 80vw) / 2),
+              calc((100vh - 40vh) / 2)
+            )
+            scale(1);
+          transform: translate(
+              calc((100vw - 80vw) / 2),
+              calc((100vh - 40vh) / 2)
+            )
+            scale(1);
+        }
+      }
+
+      #mobile-reboot-title-box {
+        background-color: #4b483f;
+        height: 25%;
+
+        #mobile-reboot-title-text {
+          text-align: center;
+          transform: translateY(calc((50% + 1rem) / 2));
+          color: $light-gray;
+          font-size: 2rem;
+        }
+      }
+
+      #mobile-reboot-text-box {
+        background-color: $light-gray;
+        display: flex;
+        height: 75%;
+        flex-direction: column;
+        justify-content: space-around;
+
+        #mobile-reboot-message {
+          color: $dark-gray;
+          text-align: center;
+          padding: 0px 15px 0px 15px;
+        }
+
+        #mobile-reboot-text-mini-box {
+          display: flex;
+          justify-content: space-around;
+
+          .mobile-reboot-text-1 {
+            width: 40%;
+            text-align-last: center;
+            background-color: $light-gray;
+            color: $dark-gray;
+            cursor: pointer;
+            border: 1px solid hsla(45, 9%, 27%, 0.5);
+          }
+
+          .mobile-reboot-text-1:hover {
+            background-color: $dark-gray;
+            color: $light-gray;
+          }
+          .mobile-reboot-text-2 {
+            width: 40%;
+            background-color: $light-gray;
+            color: $dark-gray;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid hsla(45, 9%, 27%, 0.5);
+          }
+
+          .mobile-reboot-text-2:hover {
+            background-color: $dark-gray;
+            color: $light-gray;
+          }
+        }
+      }
+    }
+
+    ///////////////////////////////////
+    /// ///////MAIN MOBILE
+    /// /////////////////////////
     #mobile-presentation {
       height: 10vh;
       display: flex;

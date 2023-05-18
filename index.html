@@ -29,14 +29,14 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="loadbox backimg display-none">
-      <div class="load-1 load-all loaddiv display-none"></div>
-      <div class="load-2 load-all loaddiv display-none"></div>
-      <div class="load-3 load-all loaddiv display-none"></div>
-      <div class="load-4 load-all loaddiv display-none"></div>
-      <div class="load-5 load-all loaddiv display-none"></div>
-      <div class="load-6 load-all loaddiv display-none"></div>
-      <div class="load-7 load-all loaddiv display-none"></div>
+    <div class="loadbox backimg">
+      <div class="load-1 load-all loaddiv"></div>
+      <div class="load-2 load-all loaddiv"></div>
+      <div class="load-3 load-all loaddiv"></div>
+      <div class="load-4 load-all loaddiv"></div>
+      <div class="load-5 load-all loaddiv"></div>
+      <div class="load-6 load-all loaddiv"></div>
+      <div class="load-7 load-all loaddiv"></div>
     </div>
     <!-- Start Button -->
     <div
@@ -52,7 +52,7 @@
     <div id="grain"></div>
 
     <!-- reboot box -->
-    <div id="reboot-box" class="display-none">
+    <!-- <div id="reboot-box" class="display-none">
       <div id="reboot-title-box">
         <div id="reboot-title-text">Reboot</div>
       </div>
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- barre de navigation -->
 
@@ -470,6 +470,40 @@
         ////////////////////////////
         ////////////////////////////////////////////// -->
     <div id="version-mobile">
+      <!-- START BTN -->
+      <div onclick="animLoadingRemoveMobile()" class="mobile-start-playbtn">
+        <div class="mobile-playbtn-box1"></div>
+        <div class="mobile-playbtn-box2"></div>
+        <div class="mobile-playbtn"></div>
+      </div>
+      <!-- REBOOT BOX -->
+
+      <div id="mobile-reboot-box" class="display-none">
+        <div id="mobile-reboot-title-box">
+          <div id="mobile-reboot-title-text">Reboot</div>
+        </div>
+        <div id="mobile-reboot-text-box">
+          <div id="mobile-reboot-message">
+            Souhaitez-vous redémarrer le terminal ?
+          </div>
+          <div id="mobile-reboot-text-mini-box">
+            <div
+              onclick="animLoadingAddMobile(),displayNoneRebootBoxMobile()"
+              class="mobile-reboot-text-1"
+            >
+              Oui
+            </div>
+            <div
+              onclick="displayNoneRebootBoxMobile(),displayMainNavMobile()"
+              class="mobile-reboot-text-2"
+            >
+              Annuler
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav TOP -->
       <div id="mobile-presentation">
         <div class="mobile-presentation-btn-menu">
           <div class="mobile-presentation-btn-menu-barre"></div>
@@ -489,9 +523,11 @@
         </div>
         <div class="mobile-window-right">
           <!-- NAV MOBILE -->
-          <div class="mobile-nav-menu mobile-nav-menu-display global-display">
+          <div
+            class="mobile-nav-menu mobile-nav-menu-display mobile-global-display"
+          >
             <div
-              onclick="DisplayToggleSousMenu1()"
+              onclick="displayProfilMenuMobile()"
               class="mobile-nav-menu-principal slide-right1"
               id="mobile-nav-menu-1"
             >
@@ -503,7 +539,7 @@
               <div class="mobile-nav-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu2()"
+              onclick="displayProjetMenuMobile()"
               class="mobile-nav-menu-principal slide-right2"
               id="mobile-nav-menu-2"
             >
@@ -515,7 +551,7 @@
               <div class="mobile-nav-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu3()"
+              onclick="displayContactMenuMobile()"
               class="mobile-nav-menu-principal slide-right3"
               id="mobile-nav-menu-3"
             >
@@ -527,7 +563,7 @@
               <div class="mobile-nav-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu4()"
+              onclick="displayRebootBoxMobile()"
               class="mobile-nav-menu-principal slide-right4"
               id="mobile-nav-menu-4"
             >
@@ -541,51 +577,51 @@
           </div>
           <!-- PROFIL -->
           <div
-            class="mobile-profil-display global-display mobile-profil-menu mobile-profil-menu-display display-none"
+            class="mobile-profil-display mobile-global-display mobile-profil-menu mobile-profil-menu-display display-none"
           >
             <div
-              onclick="DisplayToggleProfilMenu1()"
+              onclick=""
               class="mobile-profil-menu-principal slide-right1"
               id="mobile-profil-1"
             >
               <div class="mobile-profil-menu-deco"></div>
               <div class="mobile-profil-menu-items">
                 <div class="mobile-profil-menu-barre"></div>
-                <div class="mobile-profil-menu-text">Projet 1</div>
+                <div class="mobile-profil-menu-text">Profil 1</div>
               </div>
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleProfilMenu2()"
+              onclick=""
               class="mobile-profil-menu-principal slide-right2"
               id="mobile-profil-2"
             >
               <div class="mobile-profil-menu-deco"></div>
               <div class="mobile-profil-menu-items">
                 <div class="mobile-profil-menu-barre"></div>
-                <div class="mobile-profil-menu-text">Projet 2</div>
+                <div class="mobile-profil-menu-text">Profil 2</div>
               </div>
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleProfilMenu3()"
+              onclick=""
               class="mobile-profil-menu-principal slide-right3"
               id="mobile-profil-3"
             >
               <div class="mobile-profil-menu-deco"></div>
               <div class="mobile-profil-menu-items">
                 <div class="mobile-profil-menu-barre"></div>
-                <div class="mobile-profil-menu-text">Projet 3</div>
+                <div class="mobile-profil-menu-text">Profil 3</div>
               </div>
               <div class="mobile-profil-menu-deco"></div>
             </div>
           </div>
           <!-- SOUS MENU PROFIL -->
           <div
-            class="mobile-profil-sous-menu mobile-profil-menu-display global-display display-none"
+            class="mobile-profil-sous-menu mobile-profil-menu-display mobile-global-display display-none"
           >
             <div
-              class="mobile-profil-sous-menu-window1 mobile-profil-sous-menu-windows-all global-display"
+              class="mobile-profil-sous-menu-window1 mobile-profil-sous-menu-windows-all mobile-global-display"
             >
               <div class="mobile-profil-sous-menu-titre">profil1</div>
               <div class="mobile-profil-image-box-sous-menu1"></div>
@@ -607,7 +643,7 @@
             </div>
             <!-- Sous Menu 2 -->
             <div
-              class="mobile-profil-sous-menu-window2 mobile-profil-sous-menu-windows-all global-display display-none"
+              class="mobile-profil-sous-menu-window2 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-profil-sous-menu-titre">LinkedIn</div>
               <div class="mobile-profil-image-box-sous-menu2"></div>
@@ -629,7 +665,7 @@
             </div>
             <!-- Sous Menu 3 -->
             <div
-              class="mobile-profil-sous-menu-window3 mobile-profil-sous-menu-windows-all global-display display-none"
+              class="mobile-profil-sous-menu-window3 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-profil-sous-menu-titre">Formulaire</div>
               <div class="mobile-profil-image-box-sous-menu3"></div>
@@ -650,10 +686,10 @@
           <!--  -->
           <!-- PROJET -->
           <div
-            class="mobile-projet-menu mobile-projet-menu-display global-display display-none"
+            class="mobile-projet-menu mobile-projet-menu-display mobile-global-display display-none"
           >
             <div
-              onclick="DisplayToggleSousMenu1()"
+              onclick=""
               class="mobile-projet-menu-principal slide-right1"
               id="mobile-menu-1"
             >
@@ -665,7 +701,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu2()"
+              onclick=""
               class="mobile-projet-menu-principal slide-right2"
               id="mobile-menu-2"
             >
@@ -677,7 +713,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu3()"
+              onclick=""
               class="mobile-projet-menu-principal slide-right3"
               id="mobile-menu-3"
             >
@@ -689,7 +725,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleSousMenu4()"
+              onclick=""
               class="mobile-projet-menu-principal slide-right4"
               id="mobile-menu-4"
             >
@@ -703,10 +739,10 @@
           </div>
           <!-- SOUS MENU PROJET -->
           <div
-            class="mobile-sous-menu mobile-projet-menu-display global-display display-none"
+            class="mobile-sous-menu mobile-projet-menu-display mobile-global-display display-none"
           >
             <div
-              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all global-display display-none"
+              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu1"></div>
@@ -728,7 +764,7 @@
             </div>
             <!-- Sous Menu 2 -->
             <div
-              class="mobile-sous-menu-window2 mobile-sous-menu-windows-all global-display display-none"
+              class="mobile-sous-menu-window2 mobile-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-sous-menu-titre">Memory Game</div>
               <div class="mobile-image-box-sous-menu2"></div>
@@ -750,7 +786,7 @@
             </div>
             <!-- Sous Menu 3 -->
             <div
-              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all global-display display-none"
+              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu3"></div>
@@ -768,7 +804,7 @@
             </div>
             <!-- Sous Menu 4 -->
             <div
-              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all global-display display-none"
+              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-sous-menu-titre">OmniFood</div>
               <div class="mobile-image-box-sous-menu4"></div>
@@ -791,10 +827,10 @@
           <!-- CONTACT -->
 
           <div
-            class="mobile-contact-display global-display mobile-contact-menu mobile-contact-menu-display display-none"
+            class="mobile-contact-display mobile-global-display mobile-contact-menu mobile-contact-menu-display display-none"
           >
             <div
-              onclick="DisplayToggleContactSousMenu1()"
+              onclick="displayContactSousMenu1()"
               class="mobile-contact-menu-principal slide-right1"
               id="mobile-contact-1"
             >
@@ -806,7 +842,7 @@
               <div class="mobile-contact-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleContactSousMenu2()"
+              onclick="displayContactSousMenu2()"
               class="mobile-contact-menu-principal slide-right2"
               id="mobile-contact-2"
             >
@@ -818,7 +854,7 @@
               <div class="mobile-contact-menu-deco"></div>
             </div>
             <div
-              onclick="DisplayToggleContactSousMenu3()"
+              onclick="displayContactSousMenu3()"
               class="mobile-contact-menu-principal slide-right3"
               id="mobile-contact-3"
             >
@@ -832,10 +868,10 @@
           </div>
           <!-- SOUS MENU CONTACT -->
           <div
-            class="mobile-contact-sous-menu mobile-projet-menu-display global-display"
+            class="mobile-contact-sous-menu mobile-contact-menu-display mobile-global-display"
           >
             <div
-              class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all global-display display-none"
+              class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-contact-sous-menu-titre">GitHub</div>
               <div class="mobile-contact-image-box-sous-menu1"></div>
@@ -857,7 +893,7 @@
             </div>
             <!-- Sous Menu 2 -->
             <div
-              class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all global-display display-none"
+              class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-contact-sous-menu-titre">LinkedIn</div>
               <div class="mobile-contact-image-box-sous-menu2"></div>
@@ -879,7 +915,7 @@
             </div>
             <!-- Sous Menu 3 -->
             <div
-              class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all global-display display-none"
+              class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
             >
               <div class="mobile-contact-sous-menu-titre">Formulaire</div>
               <div class="mobile-contact-image-box-sous-menu3"></div>

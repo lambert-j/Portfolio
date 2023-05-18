@@ -55,9 +55,6 @@ function DisplayProjetMenu() {
   elementAll.forEach((element) => {
     element.classList.remove("display-none");
   });
-  // elementSousAll.forEach((element) => {
-  //   element.classList.add("slide-right");
-  // });
   displayRemoveProfilMenu();
   removeProfilActive();
   removeContactActive();
@@ -373,6 +370,159 @@ function buttonStartAnimOut() {
 ////////////////////////////
 //////////////////////////////////////////////
 
+// FONCTION START BTN ANIM
+document
+  .querySelector(".mobile-start-playbtn")
+  .addEventListener("click", buttonStartAnimMobile);
+
+function buttonStartAnimMobile() {
+  document
+    .querySelector(".mobile-playbtn")
+    .classList.add("mobile-playbtn-anim");
+  document
+    .querySelector(".mobile-playbtn-box2")
+    .classList.add("mobile-playbtn-box2-animout");
+  document
+    .querySelector(".mobile-playbtn-box1")
+    .classList.add("mobile-playbtn-box1-animout");
+  setTimeout(() => {
+    document
+      .querySelector(".mobile-playbtn")
+      .classList.remove("mobile-playbtn-anim");
+    document
+      .querySelector(".mobile-playbtn-box2")
+      .classList.remove("mobile-playbtn-box2-animout");
+    document
+      .querySelector(".mobile-playbtn-box1")
+      .classList.remove("mobile-playbtn-box1-animout");
+  }, 800);
+}
+
+// Fonction add Loading Screen
+const animLoadingAddMobile = function animLoad() {
+  let elements = document.querySelectorAll(".load-all");
+  setTimeout(() => {
+    document.querySelector(".load-1").classList.remove("display-none");
+  }, 50);
+  setTimeout(() => {
+    document.querySelector(".load-2").classList.remove("display-none");
+  }, 100);
+  setTimeout(() => {
+    document.querySelector(".load-3").classList.remove("display-none");
+  }, 150);
+  setTimeout(() => {
+    document.querySelector(".load-4").classList.remove("display-none");
+  }, 200);
+  setTimeout(() => {
+    document.querySelector(".load-5").classList.remove("display-none");
+  }, 250);
+  setTimeout(() => {
+    document.querySelector(".load-6").classList.remove("display-none");
+  }, 300);
+  setTimeout(() => {
+    document.querySelector(".load-6").classList.remove("display-none");
+  }, 350);
+
+  setTimeout(() => {
+    document.querySelector(".loadbox").classList.add("backimg");
+    elements.forEach((element) => {
+      element.classList.add("display-none");
+      document
+        .querySelector(".mobile-start-playbtn")
+        .classList.remove("display-none");
+    });
+  }, 300);
+};
+
+// Fonction remove loading screen
+const animLoadingRemoveMobile = function animLoadR() {
+  setTimeout(() => {
+    let elements = document.querySelectorAll(".load-all");
+    setTimeout(() => {
+      document.querySelector(".loadbox").classList.remove("backimg");
+      document
+        .querySelector(".mobile-start-playbtn")
+        .classList.add("display-none");
+      elements.forEach((element) => {
+        element.classList.remove("display-none");
+      });
+    }, 50);
+    setTimeout(() => {
+      document.querySelector(".load-7").classList.add("display-none");
+    }, 100);
+    setTimeout(() => {
+      document.querySelector(".load-6").classList.add("display-none");
+    }, 150);
+    setTimeout(() => {
+      document.querySelector(".load-5").classList.add("display-none");
+    }, 200);
+    setTimeout(() => {
+      document.querySelector(".load-4").classList.add("display-none");
+    }, 250);
+    setTimeout(() => {
+      document.querySelector(".load-3").classList.add("display-none");
+    }, 300);
+    setTimeout(() => {
+      document.querySelector(".load-2").classList.add("display-none");
+    }, 350);
+    setTimeout(() => {
+      document.querySelector(".load-1").classList.add("display-none");
+      displayMainNavMobile();
+    }, 400);
+  }, 300);
+};
+
+// fonction ADD DISPLAY NONE to Global MOBILE
+function displayNoneGlobalMobile() {
+  let elementGlobalAll = document.querySelectorAll(".mobile-global-display");
+  elementGlobalAll.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+// fonction MENU NAV DISPLAY
+function displayMainNavMobile() {
+  document.querySelector(".mobile-nav-menu").classList.remove("display-none");
+}
+
+// fonction profil menu display
+function displayProfilMenuMobile() {
+  displayNoneGlobalMobile();
+  let elementAll = document.querySelectorAll(".mobile-profil-display");
+  elementAll.forEach((element) => {
+    element.classList.remove("display-none");
+  });
+}
+
+// Fonction Projets Menu Display
+function displayProjetMenuMobile() {
+  displayNoneGlobalMobile();
+  document
+    .querySelector(".mobile-projet-menu")
+    .classList.remove("display-none");
+}
+
+// fonction Contact Menu Display
+function displayContactMenuMobile() {
+  displayNoneGlobalMobile();
+  document
+    .querySelector(".mobile-contact-menu")
+    .classList.remove("display-none");
+}
+
+// fonction Reboot Box Display
+function displayRebootBoxMobile() {
+  displayNoneGlobalMobile();
+  document.querySelector("#mobile-reboot-box").classList.remove("display-none");
+}
+
+// fonction Reboot Box DISPLAY NONE
+function displayNoneRebootBoxMobile() {
+  let elements = document.querySelector("#mobile-reboot-box");
+  elements.classList.add("display-none");
+}
+
+// Fonction Contact Menu REMOVE DISPLAY
 function displayRemoveContactMenu() {
   document
     .querySelector(".mobile-contact-menu")
@@ -393,7 +543,7 @@ function displayRemoveContactMenu() {
   }, 150);
 }
 //Profil Display Sous Menu Contact
-function DisplayToggleContactSousMenu1() {
+function displayContactSousMenu1() {
   displayRemoveContactMenu();
   setTimeout(() => {
     let element = document.querySelector(".mobile-contact-sous-menu-window1 ");
@@ -401,7 +551,7 @@ function DisplayToggleContactSousMenu1() {
   }, 150);
 }
 
-function DisplayToggleContactSousMenu2() {
+function displayContactSousMenu2() {
   displayRemoveContactMenu();
   setTimeout(() => {
     let element = document.querySelector(".mobile-contact-sous-menu-window2");
@@ -409,7 +559,7 @@ function DisplayToggleContactSousMenu2() {
   }, 150);
 }
 
-function DisplayToggleContactSousMenu3() {
+function displayContactSousMenu3() {
   displayRemoveContactMenu();
   setTimeout(() => {
     let element = document.querySelector(".mobile-contact-sous-menu-window3");
