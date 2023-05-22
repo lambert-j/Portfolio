@@ -367,7 +367,6 @@ body {
       display: flex;
       justify-content: space-between;
       gap: 80px;
-      width: 50%;
       margin-right: 30px;
     }
   }
@@ -546,7 +545,7 @@ body {
     .image-box-profil-menu2,
     .image-box-profil-menu3,
     .image-box-profil-menu4 {
-      height: 300px;
+      height: 200px;
       width: 100%;
     }
     .image-box-profil-menu1 {
@@ -678,7 +677,7 @@ body {
     .image-box-sous-menu2,
     .image-box-sous-menu3,
     .image-box-sous-menu4 {
-      height: 300px;
+      height: 200px;
       width: 100%;
     }
     .image-box-sous-menu1 {
@@ -815,7 +814,7 @@ body {
   .image-box-contact-menu2,
   .image-box-contact-menu3,
   .image-box-contact-menu4 {
-    height: 300px;
+    height: 200px;
     width: 100%;
   }
   .image-box-contact-menu1 {
@@ -1115,6 +1114,20 @@ body {
   }
   /* Responsive */
 
+  @media (max-width: 1000px) {
+    .navbar-items-main {
+      display: flex;
+      justify-content: space-between;
+
+      .navbar-items-mini-main {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        margin-right: 10px;
+      }
+    }
+  }
+
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1137,7 +1150,7 @@ body {
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     // START BTN
     .mobile-start-playbtn {
       position: absolute;
@@ -1636,8 +1649,8 @@ body {
       .mobile-profil-sous-menu-box-principal {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 40px 15px 0px 15px;
+        gap: 15px;
+        padding: 15px 15px 0px 15px;
       }
 
       .mobile-profil-image-box-sous-menu1,
@@ -1850,8 +1863,8 @@ body {
       .mobile-sous-menu-box-principal {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 40px 15px 0px 15px;
+        gap: 15px;
+        padding: 15px 15px 0px 15px;
       }
 
       .mobile-image-box-sous-menu1,
@@ -1922,8 +1935,8 @@ body {
       .mobile-contact-sous-menu-box-principal {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 40px 15px 0px 15px;
+        gap: 15px;
+        padding: 15px 15px 0px 15px;
       }
 
       .mobile-contact-image-box-sous-menu1,

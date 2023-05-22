@@ -1,3 +1,16 @@
+// Fonction switch pc to mobile
+screenSwitch();
+function screenSwitch() {
+  let screenWidth = window.screen.width;
+  if (screenWidth <= 800) {
+    document.querySelector("#version-pc").classList.add("display-none");
+    document.querySelector("#version-mobile").classList.remove("display-none");
+  } else {
+    document.querySelector("#version-pc").classList.remove("display-none");
+    document.querySelector("#version-mobile").classList.add("display-none");
+  }
+}
+
 // Reboot box display on click
 function DisplayNoneRemove() {
   displayNoneGlobal();
@@ -509,7 +522,7 @@ function displayProfilMenuMobile() {
 }
 
 // Fonction profil menu remove
-function displayRemoveProfilMenu() {
+function displayRemoveProfilMenuMobile() {
   document
     .querySelector(".mobile-profil-menu")
     .classList.add("slide-left-mobile");
@@ -528,21 +541,21 @@ function displayRemoveProfilMenu() {
 }
 // Fonction Sous Menu Profil Display
 function displayProfilSousMenu1() {
-  displayRemoveProfilMenu();
+  displayRemoveProfilMenuMobile();
   setTimeout(() => {
     let element = document.querySelector(".mobile-profil-sous-menu-window1");
     element.classList.remove("display-none");
   }, 150);
 }
 function displayProfilSousMenu2() {
-  displayRemoveProfilMenu();
+  displayRemoveProfilMenuMobile();
   setTimeout(() => {
     let element = document.querySelector(".mobile-profil-sous-menu-window2");
     element.classList.remove("display-none");
   }, 150);
 }
 function displayProfilSousMenu3() {
-  displayRemoveProfilMenu();
+  displayRemoveProfilMenuMobile();
   setTimeout(() => {
     document
       .querySelector(".mobile-profil-sous-menu-window3")
@@ -627,7 +640,7 @@ function displayNoneRebootBoxMobile() {
 }
 
 // Fonction Contact Menu REMOVE DISPLAY
-function displayRemoveContactMenu() {
+function displayRemoveContactMenuMobile() {
   document
     .querySelector(".mobile-contact-menu")
     .classList.add("slide-left-mobile");
@@ -648,7 +661,7 @@ function displayRemoveContactMenu() {
 }
 //Profil Display Sous Menu Contact
 function displayContactSousMenu1() {
-  displayRemoveContactMenu();
+  displayRemoveContactMenuMobile();
   setTimeout(() => {
     let element = document.querySelector(".mobile-contact-sous-menu-window1 ");
     element.classList.remove("display-none");
@@ -656,7 +669,7 @@ function displayContactSousMenu1() {
 }
 
 function displayContactSousMenu2() {
-  displayRemoveContactMenu();
+  displayRemoveContactMenuMobile();
   setTimeout(() => {
     let element = document.querySelector(".mobile-contact-sous-menu-window2");
     element.classList.remove("display-none");
@@ -664,7 +677,7 @@ function displayContactSousMenu2() {
 }
 
 function displayContactSousMenu3() {
-  displayRemoveContactMenu();
+  displayRemoveContactMenuMobile();
   setTimeout(() => {
     document
       .querySelector(".mobile-contact-sous-menu-window3")

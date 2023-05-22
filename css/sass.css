@@ -12323,7 +12323,6 @@ body .navbar-items-main .navbar-items-mini-main {
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  width: 50%;
   margin-right: 30px;
 }
 body .nav-menu-principal {
@@ -12472,7 +12471,7 @@ body section .image-box-profil-menu1,
 body section .image-box-profil-menu2,
 body section .image-box-profil-menu3,
 body section .image-box-profil-menu4 {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 body section .image-box-profil-menu1 {
@@ -12586,7 +12585,7 @@ body section .image-box-sous-menu1,
 body section .image-box-sous-menu2,
 body section .image-box-sous-menu3,
 body section .image-box-sous-menu4 {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 body section .image-box-sous-menu1 {
@@ -12703,7 +12702,7 @@ body .image-box-contact-menu1,
 body .image-box-contact-menu2,
 body .image-box-contact-menu3,
 body .image-box-contact-menu4 {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 body .image-box-contact-menu1 {
@@ -12879,7 +12878,19 @@ body .slide-right-mobile {
     transform: translateX(800px);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  body .navbar-items-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .navbar-items-main .navbar-items-mini-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 800px) {
   body .mobile-start-playbtn {
     position: absolute;
     width: 50px;
@@ -13248,8 +13259,8 @@ body .slide-right-mobile {
   body .mobile-window-principal .mobile-profil-sous-menu-box-principal {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 40px 15px 0px 15px;
+    gap: 15px;
+    padding: 15px 15px 0px 15px;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu1,
   body .mobile-window-principal .mobile-profil-image-box-sous-menu2,
@@ -13430,8 +13441,8 @@ body .slide-right-mobile {
   body .mobile-window-principal .mobile-sous-menu-box-principal {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 40px 15px 0px 15px;
+    gap: 15px;
+    padding: 15px 15px 0px 15px;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu1,
   body .mobile-window-principal .mobile-image-box-sous-menu2,
@@ -13494,8 +13505,8 @@ body .slide-right-mobile {
   body .mobile-window-principal .mobile-contact-sous-menu-box-principal {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 40px 15px 0px 15px;
+    gap: 15px;
+    padding: 15px 15px 0px 15px;
   }
   body .mobile-window-principal .mobile-contact-image-box-sous-menu1,
   body .mobile-window-principal .mobile-contact-image-box-sous-menu2,
