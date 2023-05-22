@@ -364,9 +364,17 @@ function buttonStartAnimOut() {
   document.querySelector(".playbtn-box1").classList.add("playbtn-box1-animout");
 }
 
+////////////////////////////
+//////////////////////////////////////////////
+////////////////////////////
+//////////////////////////////////////////////
 //////////////////////////////////////////////
 ////////////////////////////
 /////// Version Mobile
+////////////////////////////
+//////////////////////////////////////////////
+////////////////////////////
+//////////////////////////////////////////////
 ////////////////////////////
 //////////////////////////////////////////////
 
@@ -502,6 +510,55 @@ function displayProjetMenuMobile() {
     .classList.remove("display-none");
 }
 
+// Fonction Projets Menu REMOVE
+function displayRemoveProjetMenu() {
+  document
+    .querySelector(".mobile-projet-menu")
+    .classList.add("slide-left-mobile");
+  setTimeout(() => {
+    document.querySelector(".mobile-projet-menu").classList.add("display-none");
+    let elementAll = document.querySelectorAll(
+      ".mobile-projet-sous-menu-windows-all"
+    );
+    elementAll.forEach((element) => {
+      element.classList.add("display-none");
+      document
+        .querySelector(".mobile-projet-menu")
+        .classList.remove("slide-left-mobile");
+    });
+  }, 150);
+}
+
+// Fonction Sous Menu Projet Display
+function displayProjetSousMenu1() {
+  displayRemoveProjetMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-sous-menu-window1 ");
+    element.classList.remove("display-none");
+  }, 150);
+}
+function displayProjetSousMenu2() {
+  displayRemoveProjetMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-sous-menu-window2 ");
+    element.classList.remove("display-none");
+  }, 150);
+}
+function displayProjetSousMenu3() {
+  displayRemoveProjetMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-sous-menu-window3 ");
+    element.classList.remove("display-none");
+  }, 150);
+}
+function displayProjetSousMenu4() {
+  displayRemoveProjetMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-sous-menu-window4 ");
+    element.classList.remove("display-none");
+  }, 150);
+}
+
 // fonction Contact Menu Display
 function displayContactMenuMobile() {
   displayNoneGlobalMobile();
@@ -562,7 +619,8 @@ function displayContactSousMenu2() {
 function displayContactSousMenu3() {
   displayRemoveContactMenu();
   setTimeout(() => {
-    let element = document.querySelector(".mobile-contact-sous-menu-window3");
-    element.classList.remove("display-none");
+    document
+      .querySelector(".mobile-contact-sous-menu-window3")
+      .classList.remove("display-none");
   }, 150);
 }

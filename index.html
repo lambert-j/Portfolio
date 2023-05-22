@@ -29,14 +29,14 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="loadbox backimg">
-      <div class="load-1 load-all loaddiv"></div>
-      <div class="load-2 load-all loaddiv"></div>
-      <div class="load-3 load-all loaddiv"></div>
-      <div class="load-4 load-all loaddiv"></div>
-      <div class="load-5 load-all loaddiv"></div>
-      <div class="load-6 load-all loaddiv"></div>
-      <div class="load-7 load-all loaddiv"></div>
+    <div class="loadbox backimg display-none">
+      <div class="load-1 load-all loaddiv display-none"></div>
+      <div class="load-2 load-all loaddiv display-none"></div>
+      <div class="load-3 load-all loaddiv display-none"></div>
+      <div class="load-4 load-all loaddiv display-none"></div>
+      <div class="load-5 load-all loaddiv display-none"></div>
+      <div class="load-6 load-all loaddiv display-none"></div>
+      <div class="load-7 load-all loaddiv display-none"></div>
     </div>
     <!-- Start Button -->
     <div
@@ -471,7 +471,10 @@
         ////////////////////////////////////////////// -->
     <div id="version-mobile">
       <!-- START BTN -->
-      <div onclick="animLoadingRemoveMobile()" class="mobile-start-playbtn">
+      <div
+        onclick="animLoadingRemoveMobile()"
+        class="mobile-start-playbtn display-none"
+      >
         <div class="mobile-playbtn-box1"></div>
         <div class="mobile-playbtn-box2"></div>
         <div class="mobile-playbtn"></div>
@@ -689,7 +692,7 @@
             class="mobile-projet-menu mobile-projet-menu-display mobile-global-display display-none"
           >
             <div
-              onclick=""
+              onclick="displayProjetSousMenu1()"
               class="mobile-projet-menu-principal slide-right1"
               id="mobile-menu-1"
             >
@@ -701,7 +704,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick=""
+              onclick="displayProjetSousMenu2()"
               class="mobile-projet-menu-principal slide-right2"
               id="mobile-menu-2"
             >
@@ -713,7 +716,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick=""
+              onclick="displayProjetSousMenu3()"
               class="mobile-projet-menu-principal slide-right3"
               id="mobile-menu-3"
             >
@@ -725,7 +728,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick=""
+              onclick="displayProjetSousMenu4()"
               class="mobile-projet-menu-principal slide-right4"
               id="mobile-menu-4"
             >
@@ -738,89 +741,86 @@
             </div>
           </div>
           <!-- SOUS MENU PROJET -->
+
           <div
-            class="mobile-sous-menu mobile-projet-menu-display mobile-global-display display-none"
+            class="mobile-sous-menu-window1 mobile-sous-menu-windows-all mobile-global-display display-none"
           >
-            <div
-              class="mobile-sous-menu-window1 mobile-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-sous-menu-titre">OmniFood</div>
-              <div class="mobile-image-box-sous-menu1"></div>
-              <div class="mobile-sous-menu-box-principal">
-                <div class="mobile-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://omnifood-lambert.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor1"
-                  >Découvrir</a
-                >
+            <div class="mobile-sous-menu-titre">OmniFood</div>
+            <div class="mobile-image-box-sous-menu1"></div>
+            <div class="mobile-sous-menu-box-principal">
+              <div class="mobile-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
+              <a
+                href="https://omnifood-lambert.netlify.app"
+                target="_blank"
+                rel="noopener"
+                class="mobile-sous-menu-link-box mobile-sous-menu-anchor1"
+                >Découvrir</a
+              >
             </div>
-            <!-- Sous Menu 2 -->
-            <div
-              class="mobile-sous-menu-window2 mobile-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-sous-menu-titre">Memory Game</div>
-              <div class="mobile-image-box-sous-menu2"></div>
-              <div class="mobile-sous-menu-box-principal">
-                <div class="mobile-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://lambert-jordan-memorygame.netlify.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor2"
-                  >Découvrir</a
-                >
+          </div>
+          <!-- Sous Menu 2 -->
+          <div
+            class="mobile-sous-menu-window2 mobile-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-sous-menu-titre">Memory Game</div>
+            <div class="mobile-image-box-sous-menu2"></div>
+            <div class="mobile-sous-menu-box-principal">
+              <div class="mobile-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
+              <a
+                href="https://lambert-jordan-memorygame.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="mobile-sous-menu-link-box mobile-sous-menu-anchor2"
+                >Découvrir</a
+              >
             </div>
-            <!-- Sous Menu 3 -->
-            <div
-              class="mobile-sous-menu-window3 mobile-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-sous-menu-titre">OmniFood</div>
-              <div class="mobile-image-box-sous-menu3"></div>
-              <div class="mobile-sous-menu-box-principal">
-                <div class="mobile-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a class="mobile-sous-menu-link-box mobile-sous-menu-anchor3"
-                  >Découvrir</a
-                >
+          </div>
+          <!-- Sous Menu 3 -->
+          <div
+            class="mobile-sous-menu-window3 mobile-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-sous-menu-titre">OmniFood</div>
+            <div class="mobile-image-box-sous-menu3"></div>
+            <div class="mobile-sous-menu-box-principal">
+              <div class="mobile-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
+              <a class="mobile-sous-menu-link-box mobile-sous-menu-anchor3"
+                >Découvrir</a
+              >
             </div>
-            <!-- Sous Menu 4 -->
-            <div
-              class="mobile-sous-menu-window4 mobile-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-sous-menu-titre">OmniFood</div>
-              <div class="mobile-image-box-sous-menu4"></div>
-              <div class="mobile-sous-menu-box-principal">
-                <div class="mobile-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://omnifood-lambert.netlify.app"
-                  class="mobile-sous-menu-link-box mobile-sous-menu-anchor4"
-                  >Découvrir</a
-                >
+          </div>
+          <!-- Sous Menu 4 -->
+          <div
+            class="mobile-sous-menu-window4 mobile-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-sous-menu-titre">OmniFood</div>
+            <div class="mobile-image-box-sous-menu4"></div>
+            <div class="mobile-sous-menu-box-principal">
+              <div class="mobile-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
+              <a
+                href="https://omnifood-lambert.netlify.app"
+                class="mobile-sous-menu-link-box mobile-sous-menu-anchor4"
+                >Découvrir</a
+              >
             </div>
           </div>
 
@@ -867,72 +867,70 @@
             </div>
           </div>
           <!-- SOUS MENU CONTACT -->
+
           <div
-            class="mobile-contact-sous-menu mobile-contact-menu-display mobile-global-display"
+            class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
           >
-            <div
-              class="mobile-contact-sous-menu-window1 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-contact-sous-menu-titre">GitHub</div>
-              <div class="mobile-contact-image-box-sous-menu1"></div>
-              <div class="mobile-contact-sous-menu-box-principal">
-                <div class="mobile-contact-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://omnifood-lambert.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor1"
-                  >Découvrir</a
-                >
+            <div class="mobile-contact-sous-menu-titre">GitHub</div>
+            <div class="mobile-contact-image-box-sous-menu1"></div>
+            <div class="mobile-contact-sous-menu-box-principal">
+              <div class="mobile-contact-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
-            </div>
-            <!-- Sous Menu 2 -->
-            <div
-              class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-contact-sous-menu-titre">LinkedIn</div>
-              <div class="mobile-contact-image-box-sous-menu2"></div>
-              <div class="mobile-contact-sous-menu-box-principal">
-                <div class="mobile-contact-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://lambert-jordan-memorygame.netlify.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor2"
-                  >Découvrir</a
-                >
-              </div>
-            </div>
-            <!-- Sous Menu 3 -->
-            <div
-              class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-contact-sous-menu-titre">Formulaire</div>
-              <div class="mobile-contact-image-box-sous-menu3"></div>
-              <div class="mobile-contact-sous-menu-box-principal">
-                <div class="mobile-contact-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor3"
-                  >Découvrir</a
-                >
-              </div>
+              <a
+                href="https://omnifood-lambert.netlify.app"
+                target="_blank"
+                rel="noopener"
+                class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor1"
+                >Découvrir</a
+              >
             </div>
           </div>
+          <!-- Sous Menu 2 -->
+          <div
+            class="mobile-contact-sous-menu-window2 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-contact-sous-menu-titre">LinkedIn</div>
+            <div class="mobile-contact-image-box-sous-menu2"></div>
+            <div class="mobile-contact-sous-menu-box-principal">
+              <div class="mobile-contact-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a
+                href="https://lambert-jordan-memorygame.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor2"
+                >Découvrir</a
+              >
+            </div>
+          </div>
+          <!-- Sous Menu 3 -->
+          <div
+            class="mobile-contact-sous-menu-window3 mobile-contact-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-contact-sous-menu-titre">Formulaire</div>
+            <div class="mobile-contact-image-box-sous-menu3"></div>
+            <div class="mobile-contact-sous-menu-box-principal">
+              <div class="mobile-contact-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a
+                class="mobile-contact-sous-menu-link-box mobile-contact-sous-menu-anchor3"
+                >Découvrir</a
+              >
+            </div>
+          </div>
+
           <!--  -->
         </div>
       </div>
