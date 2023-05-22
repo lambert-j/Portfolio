@@ -545,13 +545,13 @@ body {
     .image-box-profil-menu2,
     .image-box-profil-menu3,
     .image-box-profil-menu4 {
-      height: 200px;
+      height: 240px;
       width: 100%;
     }
     .image-box-profil-menu1 {
       background-image: url(../images/OmniFood.PNG);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
     }
     .image-box-profil-menu2 {
@@ -677,19 +677,19 @@ body {
     .image-box-sous-menu2,
     .image-box-sous-menu3,
     .image-box-sous-menu4 {
-      height: 200px;
+      height: 240px;
       width: 100%;
     }
     .image-box-sous-menu1 {
       background-image: url(../images/OmniFoodNew.PNG);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
     }
     .image-box-sous-menu2 {
       background-image: url(../images/memorygame.png);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
     }
     .image-box-sous-menu3 {
@@ -814,19 +814,19 @@ body {
   .image-box-contact-menu2,
   .image-box-contact-menu3,
   .image-box-contact-menu4 {
-    height: 200px;
+    height: 240px;
     width: 100%;
   }
   .image-box-contact-menu1 {
     background-image: url(../images/GitHub.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .image-box-contact-menu2 {
     background-image: url(../images/GitHubOri.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .image-box-contact-menu3 {
