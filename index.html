@@ -29,14 +29,14 @@
 
   <body>
     <!-- écran de chargement -->
-    <div class="loadbox backimg display-none">
-      <div class="load-1 load-all loaddiv display-none"></div>
-      <div class="load-2 load-all loaddiv display-none"></div>
-      <div class="load-3 load-all loaddiv display-none"></div>
-      <div class="load-4 load-all loaddiv display-none"></div>
-      <div class="load-5 load-all loaddiv display-none"></div>
-      <div class="load-6 load-all loaddiv display-none"></div>
-      <div class="load-7 load-all loaddiv display-none"></div>
+    <div class="loadbox backimg">
+      <div class="load-1 load-all loaddiv"></div>
+      <div class="load-2 load-all loaddiv"></div>
+      <div class="load-3 load-all loaddiv"></div>
+      <div class="load-4 load-all loaddiv"></div>
+      <div class="load-5 load-all loaddiv"></div>
+      <div class="load-6 load-all loaddiv"></div>
+      <div class="load-7 load-all loaddiv"></div>
     </div>
     <!-- Start Button -->
     <div
@@ -471,10 +471,7 @@
         ////////////////////////////////////////////// -->
     <div id="version-mobile">
       <!-- START BTN -->
-      <div
-        onclick="animLoadingRemoveMobile()"
-        class="mobile-start-playbtn display-none"
-      >
+      <div onclick="animLoadingRemoveMobile()" class="mobile-start-playbtn">
         <div class="mobile-playbtn-box1"></div>
         <div class="mobile-playbtn-box2"></div>
         <div class="mobile-playbtn"></div>
@@ -508,7 +505,7 @@
 
       <!-- Nav TOP -->
       <div id="mobile-presentation">
-        <div class="mobile-presentation-btn-menu">
+        <div onclick="displayMainMenu()" class="mobile-presentation-btn-menu">
           <div class="mobile-presentation-btn-menu-barre"></div>
           <div class="mobile-presentation-btn-menu-text">MENU</div>
         </div>
@@ -583,7 +580,7 @@
             class="mobile-profil-display mobile-global-display mobile-profil-menu mobile-profil-menu-display display-none"
           >
             <div
-              onclick=""
+              onclick="displayProfilSousMenu1()"
               class="mobile-profil-menu-principal slide-right1"
               id="mobile-profil-1"
             >
@@ -595,7 +592,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick=""
+              onclick="displayProfilSousMenu2()"
               class="mobile-profil-menu-principal slide-right2"
               id="mobile-profil-2"
             >
@@ -607,7 +604,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick=""
+              onclick="displayProfilSousMenu3()"
               class="mobile-profil-menu-principal slide-right3"
               id="mobile-profil-3"
             >
@@ -620,72 +617,70 @@
             </div>
           </div>
           <!-- SOUS MENU PROFIL -->
+
           <div
-            class="mobile-profil-sous-menu mobile-profil-menu-display mobile-global-display display-none"
+            class="mobile-profil-sous-menu-window1 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
           >
-            <div
-              class="mobile-profil-sous-menu-window1 mobile-profil-sous-menu-windows-all mobile-global-display"
-            >
-              <div class="mobile-profil-sous-menu-titre">profil1</div>
-              <div class="mobile-profil-image-box-sous-menu1"></div>
-              <div class="mobile-profil-sous-menu-box-principal">
-                <div class="mobile-profil-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://omnifood-lambert.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor1"
-                  >Découvrir</a
-                >
+            <div class="mobile-profil-sous-menu-titre">profil1</div>
+            <div class="mobile-profil-image-box-sous-menu1"></div>
+            <div class="mobile-profil-sous-menu-box-principal">
+              <div class="mobile-profil-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
               </div>
-            </div>
-            <!-- Sous Menu 2 -->
-            <div
-              class="mobile-profil-sous-menu-window2 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-profil-sous-menu-titre">LinkedIn</div>
-              <div class="mobile-profil-image-box-sous-menu2"></div>
-              <div class="mobile-profil-sous-menu-box-principal">
-                <div class="mobile-profil-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  href="https://lambert-jordan-memorygame.netlify.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor2"
-                  >Découvrir</a
-                >
-              </div>
-            </div>
-            <!-- Sous Menu 3 -->
-            <div
-              class="mobile-profil-sous-menu-window3 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
-            >
-              <div class="mobile-profil-sous-menu-titre">Formulaire</div>
-              <div class="mobile-profil-image-box-sous-menu3"></div>
-              <div class="mobile-profil-sous-menu-box-principal">
-                <div class="mobile-profil-sous-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaerat totam facilis, architecto delectus quos dolorum
-                  eaque impedit debitis praesentium voluptatibus quod cupiditate
-                  consectetur nostrum culpa nihil porro quo?
-                </div>
-                <a
-                  class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor3"
-                  >Découvrir</a
-                >
-              </div>
+              <a
+                href="https://omnifood-lambert.netlify.app"
+                target="_blank"
+                rel="noopener"
+                class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor1"
+                >Découvrir</a
+              >
             </div>
           </div>
+          <!-- Sous Menu 2 -->
+          <div
+            class="mobile-profil-sous-menu-window2 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-profil-sous-menu-titre">LinkedIn</div>
+            <div class="mobile-profil-image-box-sous-menu2"></div>
+            <div class="mobile-profil-sous-menu-box-principal">
+              <div class="mobile-profil-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a
+                href="https://lambert-jordan-memorygame.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor2"
+                >Découvrir</a
+              >
+            </div>
+          </div>
+          <!-- Sous Menu 3 -->
+          <div
+            class="mobile-profil-sous-menu-window3 mobile-profil-sous-menu-windows-all mobile-global-display display-none"
+          >
+            <div class="mobile-profil-sous-menu-titre">Formulaire</div>
+            <div class="mobile-profil-image-box-sous-menu3"></div>
+            <div class="mobile-profil-sous-menu-box-principal">
+              <div class="mobile-profil-sous-menu-text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                qui quaerat totam facilis, architecto delectus quos dolorum
+                eaque impedit debitis praesentium voluptatibus quod cupiditate
+                consectetur nostrum culpa nihil porro quo?
+              </div>
+              <a
+                class="mobile-profil-sous-menu-link-box mobile-profil-sous-menu-anchor3"
+                >Découvrir</a
+              >
+            </div>
+          </div>
+
           <!--  -->
           <!-- PROJET -->
           <div

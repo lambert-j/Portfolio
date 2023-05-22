@@ -480,6 +480,12 @@ const animLoadingRemoveMobile = function animLoadR() {
   }, 300);
 };
 
+// Fonction display Main Menu
+function displayMainMenu() {
+  displayNoneGlobalMobile();
+  displayMainNavMobile();
+}
+
 // fonction ADD DISPLAY NONE to Global MOBILE
 function displayNoneGlobalMobile() {
   let elementGlobalAll = document.querySelectorAll(".mobile-global-display");
@@ -502,6 +508,47 @@ function displayProfilMenuMobile() {
   });
 }
 
+// Fonction profil menu remove
+function displayRemoveProfilMenu() {
+  document
+    .querySelector(".mobile-profil-menu")
+    .classList.add("slide-left-mobile");
+  setTimeout(() => {
+    document.querySelector(".mobile-profil-menu").classList.add("display-none");
+    let elementAll = document.querySelectorAll(
+      ".mobile-profil-sous-menu-windows-all"
+    );
+    elementAll.forEach((element) => {
+      element.classList.add("display-none");
+    });
+    document
+      .querySelector(".mobile-profil-menu")
+      .classList.remove("slide-left-mobile");
+  }, 150);
+}
+// Fonction Sous Menu Profil Display
+function displayProfilSousMenu1() {
+  displayRemoveProfilMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-profil-sous-menu-window1");
+    element.classList.remove("display-none");
+  }, 150);
+}
+function displayProfilSousMenu2() {
+  displayRemoveProfilMenu();
+  setTimeout(() => {
+    let element = document.querySelector(".mobile-profil-sous-menu-window2");
+    element.classList.remove("display-none");
+  }, 150);
+}
+function displayProfilSousMenu3() {
+  displayRemoveProfilMenu();
+  setTimeout(() => {
+    document
+      .querySelector(".mobile-profil-sous-menu-window3")
+      .classList.remove("display-none");
+  }, 150);
+}
 // Fonction Projets Menu Display
 function displayProjetMenuMobile() {
   displayNoneGlobalMobile();
@@ -522,10 +569,10 @@ function displayRemoveProjetMenu() {
     );
     elementAll.forEach((element) => {
       element.classList.add("display-none");
-      document
-        .querySelector(".mobile-projet-menu")
-        .classList.remove("slide-left-mobile");
     });
+    document
+      .querySelector(".mobile-projet-menu")
+      .classList.remove("slide-left-mobile");
   }, 150);
 }
 
