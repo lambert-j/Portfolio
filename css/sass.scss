@@ -1112,6 +1112,24 @@ body {
       transform: translateX(800px);
     }
   }
+
+  // FORM
+  .form-button {
+    color: $dark-gray;
+    background-color: $light-gray;
+    border: 1px solid $dark-gray;
+  }
+  .form-text {
+    color: $dark-gray;
+    textarea {
+      width: 40vw;
+      height: 20vh;
+    }
+    input {
+      width: 25vw;
+    }
+  }
+
   /* Responsive */
 
   @media (max-width: 1000px) {

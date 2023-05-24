@@ -454,18 +454,26 @@
             <div
               class="contact-menu-window3 contact-menu-windows-all display-none"
             >
-              <div class="image-box-contact-menu3"></div>
-              <div class="contact-menu-box-principal">
-                <div class="contact-menu-text-box">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                  qui quaeralectus quos dolorum eaque impedit debitis
-                  praesentium voluptatibus quod cupiditate consectetur nostrum
-                  culpa nihil porro quo?
-                </div>
-                <a class="contact-menu-link-box contact-menu-anchor3"
-                  >Découvrir</a
-                >
-              </div>
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label class="form-text"
+                    >Votre Nom: <input type="text" name="name"
+                  /></label>
+                </p>
+                <p>
+                  <label class="form-text"
+                    >Votre E-mail: <input type="email" name="email"
+                  /></label>
+                </p>
+                <p>
+                  <label class="form-text"
+                    >Message: <textarea name="message"></textarea>
+                  </label>
+                </p>
+                <p>
+                  <button class="form-button" type="submit">Envoyer</button>
+                </p>
+              </form>
             </div>
           </div>
         </section>

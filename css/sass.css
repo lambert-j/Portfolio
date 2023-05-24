@@ -12878,6 +12878,21 @@ body .slide-right-mobile {
     transform: translateX(800px);
   }
 }
+body .form-button {
+  color: #4a473e;
+  background-color: #afaa96;
+  border: 1px solid #4a473e;
+}
+body .form-text {
+  color: #4a473e;
+}
+body .form-text textarea {
+  width: 40vw;
+  height: 20vh;
+}
+body .form-text input {
+  width: 25vw;
+}
 @media (max-width: 1000px) {
   body .navbar-items-main {
     display: flex;
