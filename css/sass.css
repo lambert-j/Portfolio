@@ -12906,6 +12906,23 @@ body .form-text input {
   }
 }
 @media (max-width: 800px) {
+  body .form-button-mobile {
+    color: #4a473e;
+    background-color: #afaa96;
+    border: 1px solid #4a473e;
+    margin-left: 4px;
+  }
+  body .form-text-mobile {
+    margin-left: 4px;
+    color: #4a473e;
+  }
+  body .form-text-mobile textarea {
+    width: 70vw;
+    height: 20vh;
+  }
+  body .form-text-mobile input {
+    width: 70vw;
+  }
   body .mobile-start-playbtn {
     position: absolute;
     width: 50px;

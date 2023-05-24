@@ -1169,6 +1169,25 @@ body {
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ////////////////////////////////////////////////////////////////////////////////////////////////////
   @media (max-width: 800px) {
+    // FORM
+    .form-button-mobile {
+      color: $dark-gray;
+      background-color: $light-gray;
+      border: 1px solid $dark-gray;
+      margin-left: 4px;
+    }
+    .form-text-mobile {
+      margin-left: 4px;
+      color: $dark-gray;
+      textarea {
+        width: 70vw;
+        height: 20vh;
+      }
+      input {
+        width: 70vw;
+      }
+    }
+
     // START BTN
     .mobile-start-playbtn {
       position: absolute;
