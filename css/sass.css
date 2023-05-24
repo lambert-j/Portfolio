@@ -12887,8 +12887,8 @@ body .form-text {
   color: #4a473e;
 }
 body .form-text textarea {
-  width: 40vw;
-  height: 20vh;
+  width: 35vw;
+  height: 15vh;
 }
 body .form-text input {
   width: 25vw;
