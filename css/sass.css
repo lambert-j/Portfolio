@@ -13068,6 +13068,11 @@ body .slide-right-mobile {
     align-items: center;
     justify-content: center;
   }
+  body #mobile-presentation .bienvenu {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a473e;
+  }
   body #mobile-presentation .mobile-presentation-btn-menu {
     background-color: #afaa96;
     display: flex;

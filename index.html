@@ -515,11 +515,59 @@
 
       <!-- Nav TOP -->
       <div id="mobile-presentation">
-        <div onclick="displayMainMenu()" class="mobile-presentation-btn-menu">
+        <div class="bienvenu">Bienvenue_</div>
+        <div
+          onclick="retourToMainMenu()"
+          class="mobile-presentation-btn-menu display-none"
+        >
           <div class="mobile-presentation-btn-menu-barre"></div>
           <div class="mobile-presentation-btn-menu-text">MENU</div>
         </div>
-        <div class="mobile-presentation-btn-retour">
+        <div
+          onclick="retourToMainMenu()"
+          id="retour1"
+          class="mobile-presentation-btn-retour display-none retour-button-all"
+        >
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+        <div
+          onclick="retourButtonSousProfil()"
+          id="retour2"
+          class="mobile-presentation-btn-retour retour-button-all display-none"
+        >
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+        <div
+          onclick="retourToMainMenu()"
+          id="retour3"
+          class="mobile-presentation-btn-retour retour-button-all display-none"
+        >
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+        <div
+          onclick="retourButtonSousProjet()"
+          id="retour4"
+          class="mobile-presentation-btn-retour retour-button-all display-none"
+        >
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+        <div
+          onclick="retourToMainMenu()"
+          id="retour5"
+          class="mobile-presentation-btn-retour retour-button-all display-none"
+        >
+          <div class="mobile-presentation-btn-retour-barre"></div>
+          <div class="mobile-presentation-btn-retour-text">RETOUR</div>
+        </div>
+        <div
+          onclick="retourButtonSousContact()"
+          id="retour6"
+          class="mobile-presentation-btn-retour retour-button-all display-none"
+        >
           <div class="mobile-presentation-btn-retour-barre"></div>
           <div class="mobile-presentation-btn-retour-text">RETOUR</div>
         </div>
@@ -534,10 +582,10 @@
         <div class="mobile-window-right">
           <!-- NAV MOBILE -->
           <div
-            class="mobile-nav-menu mobile-nav-menu-display mobile-global-display"
+            class="mobile-nav-menu mobile-nav-menu-display mobile-global-display display-none"
           >
             <div
-              onclick="displayProfilMenuMobile()"
+              onclick="displayProfilMenuMobile(), retourDisplayProfilMenu()"
               class="mobile-nav-menu-principal slide-right1"
               id="mobile-nav-menu-1"
             >
@@ -549,7 +597,7 @@
               <div class="mobile-nav-menu-deco"></div>
             </div>
             <div
-              onclick="displayProjetMenuMobile()"
+              onclick="displayProjetMenuMobile(),retourDisplayProjetMenu()"
               class="mobile-nav-menu-principal slide-right2"
               id="mobile-nav-menu-2"
             >
@@ -561,7 +609,7 @@
               <div class="mobile-nav-menu-deco"></div>
             </div>
             <div
-              onclick="displayContactMenuMobile()"
+              onclick="displayContactMenuMobile(),retourDisplayContactMenu()"
               class="mobile-nav-menu-principal slide-right3"
               id="mobile-nav-menu-3"
             >
@@ -590,7 +638,7 @@
             class="mobile-profil-display mobile-global-display mobile-profil-menu mobile-profil-menu-display display-none"
           >
             <div
-              onclick="displayProfilSousMenu1()"
+              onclick="displayProfilSousMenu1(),retourDisplayProfilSousMenu()"
               class="mobile-profil-menu-principal slide-right1"
               id="mobile-profil-1"
             >
@@ -602,7 +650,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="displayProfilSousMenu2()"
+              onclick="displayProfilSousMenu2(),retourDisplayProfilSousMenu()"
               class="mobile-profil-menu-principal slide-right2"
               id="mobile-profil-2"
             >
@@ -614,7 +662,7 @@
               <div class="mobile-profil-menu-deco"></div>
             </div>
             <div
-              onclick="displayProfilSousMenu3()"
+              onclick="displayProfilSousMenu3(),retourDisplayProfilSousMenu()"
               class="mobile-profil-menu-principal slide-right3"
               id="mobile-profil-3"
             >
@@ -697,7 +745,7 @@
             class="mobile-projet-menu mobile-projet-menu-display mobile-global-display display-none"
           >
             <div
-              onclick="displayProjetSousMenu1()"
+              onclick="displayProjetSousMenu1(),retourDisplayProjetSousMenu()"
               class="mobile-projet-menu-principal slide-right1"
               id="mobile-menu-1"
             >
@@ -709,7 +757,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="displayProjetSousMenu2()"
+              onclick="displayProjetSousMenu2(),retourDisplayProjetSousMenu()"
               class="mobile-projet-menu-principal slide-right2"
               id="mobile-menu-2"
             >
@@ -721,7 +769,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="displayProjetSousMenu3()"
+              onclick="displayProjetSousMenu3(),retourDisplayProjetSousMenu()"
               class="mobile-projet-menu-principal slide-right3"
               id="mobile-menu-3"
             >
@@ -733,7 +781,7 @@
               <div class="mobile-projet-menu-deco"></div>
             </div>
             <div
-              onclick="displayProjetSousMenu4()"
+              onclick="displayProjetSousMenu4(),retourDisplayProjetSousMenu()"
               class="mobile-projet-menu-principal slide-right4"
               id="mobile-menu-4"
             >
@@ -754,10 +802,11 @@
             <div class="mobile-image-box-sous-menu1"></div>
             <div class="mobile-sous-menu-box-principal">
               <div class="mobile-sous-menu-text-box">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                qui quaerat totam facilis, architecto delectus quos dolorum
-                eaque impedit debitis praesentium voluptatibus quod cupiditate
-                consectetur nostrum culpa nihil porro quo?
+                OmniFood : Site de livraison de repas sains quotidiennement. Mon
+                premier site réalisé, avant mon entré en formation
+                professionnelle, lors de ma première formation en ligne sur
+                Udemy afin de découvrir HTML et CSS et les bases du
+                développement Web
               </div>
               <a
                 href="https://omnifood-lambert.netlify.app"
@@ -776,10 +825,10 @@
             <div class="mobile-image-box-sous-menu2"></div>
             <div class="mobile-sous-menu-box-principal">
               <div class="mobile-sous-menu-text-box">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                qui quaerat totam facilis, architecto delectus quos dolorum
-                eaque impedit debitis praesentium voluptatibus quod cupiditate
-                consectetur nostrum culpa nihil porro quo?
+                Memogamy : Petit jeu de mémoire. Premier projet Javascript
+                réalisé lors de ma formation professionnelle Web Dev. Projet
+                réalisé en 12h pour mettre en application les connaissances en
+                Javascript apprises lors des semaines précèdentes
               </div>
               <a
                 href="https://lambert-jordan-memorygame.netlify.app/"
@@ -835,7 +884,7 @@
             class="mobile-contact-display mobile-global-display mobile-contact-menu mobile-contact-menu-display display-none"
           >
             <div
-              onclick="displayContactSousMenu1()"
+              onclick="displayContactSousMenu1(),retourDisplayContactSousMenu()"
               class="mobile-contact-menu-principal slide-right1"
               id="mobile-contact-1"
             >
@@ -847,7 +896,7 @@
               <div class="mobile-contact-menu-deco"></div>
             </div>
             <div
-              onclick="displayContactSousMenu2()"
+              onclick="displayContactSousMenu2(),retourDisplayContactSousMenu()"
               class="mobile-contact-menu-principal slide-right2"
               id="mobile-contact-2"
             >
@@ -859,7 +908,7 @@
               <div class="mobile-contact-menu-deco"></div>
             </div>
             <div
-              onclick="displayContactSousMenu3()"
+              onclick="displayContactSousMenu3(),retourDisplayContactSousMenu()"
               class="mobile-contact-menu-principal slide-right3"
               id="mobile-contact-3"
             >

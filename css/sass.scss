@@ -1424,6 +1424,11 @@ body {
       align-items: center;
       justify-content: center;
 
+      .bienvenu {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $dark-gray;
+      }
       .mobile-presentation-btn-menu {
         background-color: $light-gray;
         display: flex;

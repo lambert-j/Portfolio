@@ -419,6 +419,93 @@ function buttonStartAnimMobile() {
   }, 800);
 }
 
+// Fonction MENU et RETOUR DISPLAY
+
+function bienvenuRemoveDisplay() {
+  document.querySelector(".bienvenu").classList.remove("display-none");
+}
+function bienvenuAddDisplay() {
+  document.querySelector(".bienvenu").classList.add("display-none");
+}
+
+function menuButtonAddDisplay() {
+  let element = document.querySelector(".mobile-presentation-btn-menu");
+  element.classList.add("display-none");
+}
+
+function retourAddDisplayAll() {
+  let elements = document.querySelectorAll(".retour-button-all");
+  elements.forEach((element) => {
+    element.classList.add("display-none");
+  });
+}
+
+function retourToMainMenu() {
+  bienvenuRemoveDisplay();
+  menuButtonAddDisplay();
+  retourAddDisplayAll();
+  displayMainMenu();
+}
+
+function retourDisplayProfilMenu() {
+  bienvenuAddDisplay();
+  menuButtonAddDisplay();
+  retourAddDisplayAll();
+  document.querySelector("#retour1").classList.remove("display-none");
+  document
+    .querySelector(".mobile-presentation-btn-menu")
+    .classList.remove("display-none");
+}
+
+function retourDisplayProjetMenu() {
+  bienvenuAddDisplay();
+  menuButtonAddDisplay();
+  retourAddDisplayAll();
+  document.querySelector("#retour3").classList.remove("display-none");
+  document
+    .querySelector(".mobile-presentation-btn-menu")
+    .classList.remove("display-none");
+}
+
+function retourDisplayContactMenu() {
+  bienvenuAddDisplay();
+  menuButtonAddDisplay();
+  retourAddDisplayAll();
+  document.querySelector("#retour5").classList.remove("display-none");
+  document
+    .querySelector(".mobile-presentation-btn-menu")
+    .classList.remove("display-none");
+}
+
+function retourDisplayProfilSousMenu() {
+  retourAddDisplayAll();
+  document.querySelector("#retour2").classList.remove("display-none");
+}
+function retourDisplayProjetSousMenu() {
+  retourAddDisplayAll();
+  document.querySelector("#retour4").classList.remove("display-none");
+}
+function retourDisplayContactSousMenu() {
+  retourAddDisplayAll();
+  document.querySelector("#retour6").classList.remove("display-none");
+}
+
+function retourButtonSousProfil() {
+  displayProfilMenuMobile();
+  retourAddDisplayAll();
+  document.querySelector("#retour1").classList.remove("display-none");
+}
+function retourButtonSousProjet() {
+  displayProjetMenuMobile();
+  retourAddDisplayAll();
+  document.querySelector("#retour3").classList.remove("display-none");
+}
+function retourButtonSousContact() {
+  displayContactMenuMobile();
+  retourAddDisplayAll();
+  document.querySelector("#retour5").classList.remove("display-none");
+}
+
 // Fonction add Loading Screen
 const animLoadingAddMobile = function animLoad() {
   let elements = document.querySelectorAll(".load-all");
