@@ -18,7 +18,9 @@ body {
   font-family: "Quantico";
   letter-spacing: 3px;
   font-size: 1.4rem;
-
+  #version-mobile {
+    width: 100vw;
+  }
   /* Javascript class */
   .display-none {
     display: none !important;
@@ -953,9 +955,12 @@ body {
   @keyframes scale-up-window {
     0% {
       transform: translateX(50px);
+      position: absolute;
     }
+
     100% {
       transform: translateX(0px);
+      position: relative;
     }
   }
 
@@ -1500,6 +1505,7 @@ body {
 
     .mobile-window-principal {
       height: 75vh;
+      width: calc(100vw -20px);
       display: flex;
       align-items: center;
       gap: 30px;
