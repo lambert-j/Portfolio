@@ -12590,7 +12590,7 @@ body section .image-box-sous-menu4 {
 }
 body section .image-box-sous-menu1 {
   background-image: url(../images/OmniFoodNew.PNG);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12706,8 +12706,8 @@ body .image-box-contact-menu4 {
   width: 100%;
 }
 body .image-box-contact-menu1 {
-  background-image: url(../images/GitHub.png);
-  background-position: center;
+  background-image: url(../images/GitHub16-9.png);
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13554,13 +13554,13 @@ body .form-text input {
     width: 100%;
   }
   body .mobile-window-principal .mobile-contact-image-box-sous-menu1 {
-    background-image: url(../images/OmniFood4-3.png);
+    background-image: url(../images/GitHub4-3.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-contact-image-box-sous-menu2 {
-    background-image: url(../images/memorygame4-3.png);
+    background-image: url(../images/GitHub4-3.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
