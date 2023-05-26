@@ -12455,10 +12455,10 @@ body section .profil-menu-window4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   border-top: 30px solid #4a473e;
   background-color: #dfdac4;
-  padding: 15px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   box-shadow: 0px 0px 5px #4a473e;
   animation: scale-up-window 0.1s 1 forwards;
 }
@@ -12469,8 +12469,7 @@ body section .profil-menu-box-principal {
 }
 body section .image-box-profil-menu1,
 body section .image-box-profil-menu2,
-body section .image-box-profil-menu3,
-body section .image-box-profil-menu4 {
+body section .image-box-profil-menu3 {
   height: 240px;
   width: 100%;
 }
@@ -12484,14 +12483,14 @@ body section .image-box-profil-menu2 {
   background-color: rgb(218, 198, 16);
 }
 body section .image-box-profil-menu3 {
-  background-color: rgb(16, 218, 93);
-}
-body section .image-box-profil-menu4 {
-  background-color: rgb(19, 16, 218);
+  background-image: url(../images/zergling-starcraft-carbot.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 body section .profil-menu-text-box {
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 body section .profil-menu-link-box {
   align-self: flex-end;
@@ -12569,10 +12568,10 @@ body section .sous-menu-window4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   border-top: 30px solid #4a473e;
   background-color: #dfdac4;
-  padding: 15px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   box-shadow: 0px 0px 5px #4a473e;
   animation: scale-up-window 0.1s 1 forwards;
 }
@@ -12595,7 +12594,7 @@ body section .image-box-sous-menu1 {
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu2 {
-  background-image: url(../images/memorygame.png);
+  background-image: url(../images/memorygamedesat.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12608,7 +12607,7 @@ body section .image-box-sous-menu4 {
 }
 body section .sous-menu-text-box {
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 body section .sous-menu-link-box {
   align-self: flex-end;
@@ -12686,10 +12685,10 @@ body .contact-menu-window4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   border-top: 30px solid #4a473e;
   background-color: #dfdac4;
-  padding: 15px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   box-shadow: 0px 0px 5px #4a473e;
   animation: scale-up-window 0.1s 1 forwards;
 }
@@ -12725,7 +12724,7 @@ body .image-box-contact-menu4 {
 }
 body .contact-menu-text-box {
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 body .contact-menu-link-box {
   align-self: flex-end;
@@ -13314,16 +13313,16 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu2 {
-    background-image: url(../images/memorygame4-3.png);
+    background-image: url(../images/memogamedesat4-3.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu3 {
-    background-color: rgb(16, 218, 93);
-  }
-  body .mobile-window-principal .mobile-profil-image-box-sous-menu4 {
-    background-color: rgb(19, 16, 218);
+    background-image: url(../images/memogamedesat4-3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-sous-menu-text-box {
     font-size: 0.8rem;
