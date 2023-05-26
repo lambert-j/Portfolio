@@ -520,9 +520,7 @@ body {
     /* SOUS MENU PROFIL */
     /////////////////////////////////
     .profil-menu-window1,
-    .profil-menu-window2,
-    .profil-menu-window3,
-    .profil-menu-window4 {
+    .profil-menu-window2 {
       height: 100%;
       width: 100%;
       display: flex;
@@ -531,6 +529,19 @@ body {
       border-top: 30px solid $dark-gray;
       background-color: $window-gray;
       padding: 10px 10px 0px 10px;
+      box-shadow: 0px 0px 5px $dark-gray;
+      animation: scale-up-window 0.1s 1 forwards;
+    }
+
+    .profil-menu-window3 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+      border-top: 30px solid $dark-gray;
+      background-color: $window-gray;
       box-shadow: 0px 0px 5px $dark-gray;
       animation: scale-up-window 0.1s 1 forwards;
     }
@@ -557,7 +568,7 @@ body {
       background-color: rgb(218, 198, 16);
     }
     .image-box-profil-menu3 {
-      background-image: url(../images/zergling-starcraft-carbot.gif);
+      background-image: url(../images/new-toy-star-crafts.gif);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -1688,6 +1699,12 @@ body {
         padding: 15px 15px 0px 15px;
       }
 
+      .banniere-zerg-mobile {
+        width: 100%;
+        justify-self: flex-end;
+        margin-top: auto;
+      }
+
       .mobile-profil-image-box-sous-menu1,
       .mobile-profil-image-box-sous-menu2,
       .mobile-profil-image-box-sous-menu3,
@@ -1708,7 +1725,7 @@ body {
         background-repeat: no-repeat;
       }
       .mobile-profil-image-box-sous-menu3 {
-        background-image: url(../images/memogamedesat4-3.png);
+        background-image: url(../images/new-toy-star-crafts.gif);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

@@ -12448,9 +12448,7 @@ body section .profil-menu .profil-menu-principal:hover .profil-menu-text {
   }
 }
 body section .profil-menu-window1,
-body section .profil-menu-window2,
-body section .profil-menu-window3,
-body section .profil-menu-window4 {
+body section .profil-menu-window2 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -12459,6 +12457,18 @@ body section .profil-menu-window4 {
   border-top: 30px solid #4a473e;
   background-color: #dfdac4;
   padding: 10px 10px 0px 10px;
+  box-shadow: 0px 0px 5px #4a473e;
+  animation: scale-up-window 0.1s 1 forwards;
+}
+body section .profil-menu-window3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 30px solid #4a473e;
+  background-color: #dfdac4;
   box-shadow: 0px 0px 5px #4a473e;
   animation: scale-up-window 0.1s 1 forwards;
 }
@@ -12483,7 +12493,7 @@ body section .image-box-profil-menu2 {
   background-color: rgb(218, 198, 16);
 }
 body section .image-box-profil-menu3 {
-  background-image: url(../images/zergling-starcraft-carbot.gif);
+  background-image: url(../images/new-toy-star-crafts.gif);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -13299,6 +13309,11 @@ body .form-text input {
     gap: 15px;
     padding: 15px 15px 0px 15px;
   }
+  body .mobile-window-principal .banniere-zerg-mobile {
+    width: 100%;
+    justify-self: flex-end;
+    margin-top: auto;
+  }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu1,
   body .mobile-window-principal .mobile-profil-image-box-sous-menu2,
   body .mobile-window-principal .mobile-profil-image-box-sous-menu3,
@@ -13319,7 +13334,7 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu3 {
-    background-image: url(../images/memogamedesat4-3.png);
+    background-image: url(../images/new-toy-star-crafts.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
