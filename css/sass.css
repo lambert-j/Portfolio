@@ -12484,13 +12484,16 @@ body section .image-box-profil-menu3 {
   width: 100%;
 }
 body section .image-box-profil-menu1 {
-  background-image: url(../images/OmniFood.PNG);
+  background-image: url(../images/guitare4-3.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 body section .image-box-profil-menu2 {
-  background-color: rgb(218, 198, 16);
+  background-image: url(../images/montagne.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 body section .image-box-profil-menu3 {
   background-image: url(../images/new-toy-star-crafts.gif);
@@ -13328,7 +13331,7 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu2 {
-    background-image: url(../images/memogamedesat4-3.png);
+    background-image: url(../images/guitare4-3.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
