@@ -12622,7 +12622,10 @@ body section .image-box-sous-menu3 {
   background-color: rgb(16, 218, 93);
 }
 body section .image-box-sous-menu4 {
-  background-color: rgb(19, 16, 218);
+  background-image: url(../images/Refonte\ Web\ Figma.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body section .sous-menu-text-box {
   font-size: 1rem;
@@ -13532,7 +13535,10 @@ body .form-text input {
     background-color: rgb(16, 218, 93);
   }
   body .mobile-window-principal .mobile-image-box-sous-menu4 {
-    background-color: rgb(19, 16, 218);
+    background-image: url(../images/Refonte\ Web\ Figma.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-sous-menu-text-box {
     font-size: 0.8rem;
