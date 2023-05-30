@@ -485,6 +485,9 @@ body {
           height: 2px;
         }
       }
+      #profil-3 {
+        opacity: 0.3;
+      }
       .profil-menu-items:hover {
         box-shadow: 1px 1px 3px $dark-gray;
       }
@@ -553,19 +556,23 @@ body {
     }
 
     .image-box-profil-menu1,
-    .image-box-profil-menu2,
-    .image-box-profil-menu3 {
+    .image-box-profil-menu2 {
       height: 240px;
       width: 100%;
     }
+    .image-box-profil-menu3 {
+      height: 100%;
+      width: 100%;
+    }
+
     .image-box-profil-menu1 {
-      background-image: url(../images/guitare4-3.png);
+      background-image: url(../images/OmniFood.PNG);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
     .image-box-profil-menu2 {
-      background-image: url(../images/montagne.jpg);
+      background-image: url(../images/OmniFood.PNG);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -1135,12 +1142,14 @@ body {
   }
   .form-text {
     color: $dark-gray;
+    display: flex;
+    justify-content: space-between;
     textarea {
-      width: 35vw;
+      width: 70%;
       height: 15vh;
     }
     input {
-      width: 25vw;
+      width: 70%;
     }
   }
 
@@ -1610,6 +1619,9 @@ body {
         justify-content: space-evenly;
         height: 70vh;
         width: 75vw;
+        #mobile-profil-3 {
+          opacity: 0.3;
+        }
         .mobile-profil-menu-principal {
           display: flex;
           flex-direction: column;
@@ -1677,8 +1689,7 @@ body {
       /// //////////////////////////
       .mobile-profil-sous-menu-window1,
       .mobile-profil-sous-menu-window2,
-      .mobile-profil-sous-menu-window3,
-      .mobile-profil-sous-menu-window4 {
+      .mobile-profil-sous-menu-window3 {
         height: 70vh;
         width: 100%;
         display: flex;
@@ -1709,9 +1720,7 @@ body {
       }
 
       .mobile-profil-image-box-sous-menu1,
-      .mobile-profil-image-box-sous-menu2,
-      .mobile-profil-image-box-sous-menu3,
-      .mobile-profil-image-box-sous-menu4 {
+      .mobile-profil-image-box-sous-menu2 {
         height: 30vh;
         width: 100%;
       }
@@ -1722,13 +1731,15 @@ body {
         background-repeat: no-repeat;
       }
       .mobile-profil-image-box-sous-menu2 {
-        background-image: url(../images/guitare4-3.png);
+        background-image: url(../images/OmniFood.PNG);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
       }
       .mobile-profil-image-box-sous-menu3 {
-        background-image: url(../images/new-toy-star-crafts.gif);
+        height: 100%;
+        width: 80vw;
+        background-image: url(../images/zergling-starcraft-carbot.gif);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
