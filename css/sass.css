@@ -12492,7 +12492,7 @@ body section .image-box-profil-menu3 {
 body section .image-box-profil-menu1 {
   background-image: url(../images/hello-world.gif);
   background-position: center;
-  background-size: contain;
+  background-size: fill;
   background-repeat: no-repeat;
 }
 body section .image-box-profil-menu2 {
@@ -13514,7 +13514,7 @@ body .form-text input {
     width: 100%;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu1 {
-    background-image: url(../images/OmniFood4-3.j);
+    background-image: url(../images/OmniFood4-3.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
