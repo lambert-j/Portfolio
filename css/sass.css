@@ -12496,7 +12496,7 @@ body section .image-box-profil-menu1 {
   background-repeat: no-repeat;
 }
 body section .image-box-profil-menu2 {
-  background-image: url(../images/guitare4-3.png);
+  background-image: url(../images/guitare4-3.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -12607,13 +12607,13 @@ body section .image-box-sous-menu4 {
   width: 100%;
 }
 body section .image-box-sous-menu1 {
-  background-image: url(../images/OmniFoodNew.PNG);
+  background-image: url(../images/OmniFoodNew.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu2 {
-  background-image: url(../images/memorygamedesat.png);
+  background-image: url(../images/memorygamedesat.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12622,7 +12622,7 @@ body section .image-box-sous-menu3 {
   background-color: rgb(16, 218, 93);
 }
 body section .image-box-sous-menu4 {
-  background-image: url(../images/Refonte\ Web\ Figma.png);
+  background-image: url(../images/Refonte\ Web\ Figma.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13336,7 +13336,7 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-profil-image-box-sous-menu2 {
-    background-image: url(../images/guitare4-3.png);
+    background-image: url(../images/guitare4-3.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -13514,13 +13514,13 @@ body .form-text input {
     width: 100%;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu1 {
-    background-image: url(../images/OmniFood4-3.png);
+    background-image: url(../images/OmniFood4-3.j);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu2 {
-    background-image: url(../images/memorygame4-3.png);
+    background-image: url(../images/memogamedesat4-3.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -13529,7 +13529,7 @@ body .form-text input {
     background-color: rgb(16, 218, 93);
   }
   body .mobile-window-principal .mobile-image-box-sous-menu4 {
-    background-image: url(../images/Refonte\ Web\ Figma.png);
+    background-image: url(../images/Refonte\ Web\ Figma.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
