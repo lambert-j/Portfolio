@@ -12619,7 +12619,10 @@ body section .image-box-sous-menu2 {
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu3 {
-  background-color: rgb(16, 218, 93);
+  background-image: url(../images/MOVIEQUIZ.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body section .image-box-sous-menu4 {
   background-image: url(../images/Refonte\ Web\ Figma.jpg);
@@ -13526,7 +13529,10 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu3 {
-    background-color: rgb(16, 218, 93);
+    background-image: url(../images/MOVIEQUIZ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu4 {
     background-image: url(../images/Refonte\ Web\ Figma.jpg);
