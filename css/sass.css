@@ -12554,14 +12554,14 @@ body section .image-box-sous-menu4 {
   width: 100%;
 }
 body section .image-box-sous-menu1 {
-  background-image: url(../images/OmniFoodNew.jpg);
+  background-image: url(../images/cdos21.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu2 {
   background-image: url(../images/ValoSkins.png);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12572,8 +12572,8 @@ body section .image-box-sous-menu3 {
   background-repeat: no-repeat;
 }
 body section .image-box-sous-menu4 {
-  background-image: url(../images/Refonte\ Web\ Figma.jpg);
-  background-position: center;
+  background-image: url(../images/OmniFoodNew.jpg);
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13464,9 +13464,9 @@ body .form-text input {
     width: 100%;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu1 {
-    background-image: url(../images/OmniFood4-3.jpg);
+    background-image: url(../images/cdos21.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu2 {
@@ -13482,9 +13482,9 @@ body .form-text input {
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-image-box-sous-menu4 {
-    background-image: url(../images/Refonte\ Web\ Figma.jpg);
+    background-image: url(../images/OmniFood4-3.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   body .mobile-window-principal .mobile-sous-menu-text-box {
